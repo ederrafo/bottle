@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ title }}</title>
+    <meta name="keywords" content="online markdown editor,markdown编辑器,在线编辑markdown" />
+    <meta name="description" content="MaHua是一个在线编辑markdown的工具" />
+    <meta name="COPYRIGHT" content="版权所有2012,http://MaHua.jser.me/">
+    {% from 'macros/resource_render.html' import render_css_to_response, render_script_to_response %}
+    {{ render_css_to_response( g.css_list) }}
+    {{ render_script_to_response( g.script_list) }}
+{#    <link href="mahua.css?v=3" rel="stylesheet" type="text/css" />#}
+{#    <link rel="shortcut icon" href="favicon.png" type="image/vnd.microsoft.icon" />#}
+</head>
+<body>
+<div class="mahua-container">
+    <div id="mahua-docname" class="mahua-docanme"></div>
+    <ul class="mahua-topbar" id="mahua-topbar">
+        <li class="mahua-config" id="mahua-config"></li>
+        <li class="mahua-session" id="mahua-session"></li>
+        <li class="mahua-donate" id="mahua-donate"></li>
+    </ul>
+    <div class="mahua-toolbar" style="display:none" id="mahua-toolbar">
+        <table cellspacing="0">
+            <tr>
+                <td>
+                    <label for="mahua-changeSession">选择文档</label>
+                </td>
+                <td>
+                    <select id="mahua-changeSession" name=""> </select>
+                    <a href="javascript:;" id="mahua-removeSession">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mahua-editorThemes">编辑器主题</label>
+                </td>
+                <td>
+                    <select id="mahua-editorThemes" name=""> </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mahua-previewThemes">预览主题</label>
+                </td>
+                <td>
+                    <select id="mahua-previewThemes" name=""></select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="mahua-keyboard">VIM快捷键</label>
+                            </td>
+                            <td>
+                                <input id="mahua-keyboard" type="checkbox" checked class="checkbox" value="" name="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mahua-linenum">行号</label>
+                            </td>
+                            <td>
+                                <input id="mahua-linenum" type="checkbox" checked class="checkbox" value="" name="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mahua-attachInfo">附加MaHua信息</label>
+                            </td>
+                            <td>
+                                <input id="mahua-attachInfo" type="checkbox" checked class="checkbox" value="" name="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mahua-syncRoll">自动滚动</label>
+                            </td>
+                            <td>
+                                <input id="mahua-syncRoll" type="checkbox" class="checkbox" value="" name="" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input id="mahua-toggleMode" type="button" class="button" value="自定义CSS" name="" />
+                    <input id="mahua-importSource" type="button" class="button" value="导入" name="" />
+                    <input id="mahua-exportHTML" type="button" class="button" value="导出" name="" />
+                    <input id="mahua-closeConfig" type="button" class="button" value="关闭设置" name="" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="mahua-donate-detail" style="display:none" id="mahua-donate-detail">
+        <table cellspacing="0">
+            <tr>
+                <td>
+                    支付宝捐助
+                </td>
+                <td>
+                    <a target="_blank" href='http://me.alipay.com/ihubo'>{# <img src='alipayPage_cn.png'/> #}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PayPal捐助
+                </td>
+                <td>
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHRwYJKoZIhvcNAQcEoIIHODCCBzQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCjktPQaN5cNQff3rmn4/9kDUx5Z4ffRNX6G828uQcC7AbXCTs7pwpObWssK9JAWHqh5c90z7YAWfFccpNlsAIqU4PkvC/ShC4qZa7x5CInc98wSJFHz7lTLFCYp0Hhw+LXW3NVh8GF6bFAATF1BBdCa5yjW46FTIjnenNkbzUlpzELMAkGBSsOAwIaBQAwgcQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIImM9NniW5i6AgaCOsI6z+aF1B4qz/nkP0UJ35BUt9GTGhq/8LTb4LXDeHjDZLpON9hV1cqCWLhgyRZ2YnDG7wOT7CJ8kjrFQBPdBuH+s/WMVVRAn/U81vm3ZPUUO04vGcfVg4hd0Y2F/840oSJ9vl9AwaceoVzYROi0pxsB6GmkTHIqTN773zCd8MXBOK3iTg/bVbeX1FEa4jA7HkvlA4jdXdNnTcn5xDmyOoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTIwODI3MTAyNTIyWjAjBgkqhkiG9w0BCQQxFgQUz0mY3I+1TczeBlqWq2WAjh7arWswDQYJKoZIhvcNAQEBBQAEgYAojG1UKsEqb3LS/akGpQM65kpsu9gxiQnYXUl4a46cNvI3fEICHRCoPp41cABUXdZpPdFN2wVob7keduglSJRpuIlKaTEOeUNNbe8dBpwDqYD9524jd0uhKim+YinZzhBvpQ/zzTYiufWjpeiH+6wKZ8PJeTBgSMkrlvWk1LLNUg==-----END PKCS7-----
+                        ">
+                        {# <input type="image" src="paypalPage_cn.png" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！"> #}
+                        <img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input id="mahua-closeDonate" type="button" class="button" value="关闭" name="" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="mahua-spliter" id="mahua-spliter"></div>
+    <div class="mahua-left">
+        <div id="mahua-editor" style="height:100%;width:50%;"></div>
+    </div>
+    <div class="mahua-right" id="mahua-result"> </div>
+</div>
+{#<script type="text/javascript" src="ace/ace.js"></script>#}
+{#<script type="text/javascript" src="ace/keybinding-vim.js"></script>#}
+<script type="text/javascript" src="http://mahua.jser.me/all.js?v=5"></script>
+<script type="text/javascript">
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'hm.baidu.com/h.js?f628d86243daf05c564aa17f55e27b02';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</body>
+</html>
