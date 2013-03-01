@@ -1,0 +1,61 @@
+{%- extends 'layout.html' -%}
+{%- block wrap -%}
+    <div id="body">
+        <div id="body_title">
+            @ js.TETRIS
+        </div>
+        <div id="body_body">
+            <div id="gridding"></div>
+            <div id="option">
+                <div id="score">
+                    <h1>Score :</h1>
+                    <p>This Eliminate : <span id="this_elim">0</span></p>
+                    <p>This Score : <span id="this_score">0</span></p>
+                    <p>Total Score : <span id="total_score">0</span></p>
+                </div>
+                <div id="keyboard">
+                    <h1>KeyBoard:</h1>
+                    <p><img src="{{ 'mat_domain'|get_domain_name }}/images/tetris/up.png" /> : Turn</p>
+                    <p><img src="{{ 'mat_domain'|get_domain_name }}/images/tetris/down.png" /> : Down</p>
+                    <p><img src="{{ 'mat_domain'|get_domain_name }}/images/tetris/left.png" /> : Left</p>
+                    <p><img src="{{ 'mat_domain'|get_domain_name }}/images/tetris/right.png" /> : Right</p>
+                    <p>Start/Pause : Space</p>
+                    <p>Restart : F5</p>
+                </div>
+                <div id="panel">
+                    <h1>Panel:</h1>
+                    <div id="restart">
+                        RESTART
+                    </div>
+                    <table id="speed" cellspacing=3>
+                        <tr>
+                            <td id="slow">-</td>
+                            <td>SPEED : <span id="current_speed"></span></td>
+                            <td id="fast">+</td>
+                        </tr>
+                    </table>
+                    <table id="clicker" cellspacing=3>
+                        <tr>
+                            <td></td>
+                            <td id="turn">TURN</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td id="left">LEFT</td>
+                            <td id="start">START</td>
+                            <td id="right">RIGHT</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="down">DOWN</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+{%- endblock -%}

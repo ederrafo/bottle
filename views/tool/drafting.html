@@ -1,0 +1,658 @@
+{%- extends 'layout.html' -%}
+{%- block wrap -%}
+    <script type="text/javascript">
+    var canvas, xp, yp, theme, zoom, zoomKey, func = new Array(), fg, line = 0, example;
+
+    $(function(){
+
+        canvas = $('#canvas');
+
+        canvas.attr('width', $('body').width());
+        canvas.attr('height', $('body').height());
+        xp = Math.floor($('body').width() / 2);
+        yp = Math.floor($('body').height() / 2);
+
+        theme = new Array();
+        theme[1] = new Array('#000', '#ff0', '#333');
+        theme[0] = new Array('#fff', '#069', '#ccc');
+        themeKey = 0;
+
+        zoom = new Array(8, 16, 32, 64, 128, 256, 512, 1024);
+        zoomKey = 2;
+        $('#zoom_level').css('background-position', -(28 * zoomKey) + 'px 0px');
+
+        example = new Array()
+        example[0] = new Array('x=6*cos(q);y=3*sin(q);q=(0,2*PI);', 'f00', 1);
+        example[1] = new Array('y=1/x;y=-1/x;', '0f0', 1);
+        example[2] = new Array('x=q*cos(q);y=q*sin(q);q=(-2.5*PI,2.5*PI);', '00f', 1);
+        example[3] = new Array('x=4*cos(2*q)*cos(q);y=4*cos(2*q)*sin(q);q=(0,2*PI);', 'f90', 1);
+        example[4] = new Array('y=tan(x);y=cos(x)/sin(x)', '0ff', 1);
+        example[5] = new Array('x=4*cos(8*q)*cos(q);y=4*cos(8*q)*sin(q);q=(0,2*PI);', 'f0f', 1);
+        example[6] = new Array('x = 4*(sin(2*q)+0.2*sin(100*q))*cos(q);y = 4*(sin(2*q)+0.2*sin(100*q))*sin(q);q = (0, 2*PI);', '09f', 1);
+        example[7] = new Array('y=abs(pow(x, 2)-4)+2;', '90f', 1);
+
+        if(canvas[0].getContext){
+            context = canvas[0].getContext('2d');
+        }else{
+            window.location = "error.html";
+        }
+
+        fg = new JFuncDiagraph(context, canvas.width(), canvas.height(), xp, yp, zoom[zoomKey], theme[themeKey][0]);
+        fg.drawCoord(theme[themeKey][1], theme[themeKey][2]);
+
+        $('#zoom_in').click(function(){
+
+            $('#zoom_out').css('background-position','');
+            if(zoomKey < zoom.length - 1){
+                zoomKey++
+                $('#zoom_level').css('background-position', -(28 * zoomKey) + 'px 0px');
+                fg.zoomInOut(zoom[zoomKey]);
+
+                xp = Math.floor($('body').width() / 2 - ($('body').width() / 2 - xp) * zoom[zoomKey] / zoom[zoomKey - 1]);
+                yp = Math.floor($('body').height() / 2 - ($('body').height() / 2 - yp) * zoom[zoomKey] / zoom[zoomKey - 1]);
+                fg.position(xp, yp);
+
+                fg.drawCoord(theme[themeKey][1], theme[themeKey][2]);
+                fg.drawEachFuncDiagraph(func);
+            }else{
+                $(this).css('background-position','-28px 28px');
+            }
+        });
+
+        $('#zoom_out').click(function(){
+
+            $('#zoom_in').css('background-position','');
+            if(zoomKey > 0){
+                zoomKey--;
+                $('#zoom_level').css('background-position', -(28 * zoomKey) + 'px 0px');
+                fg.zoomInOut(zoom[zoomKey]);
+
+                xp = Math.floor($('body').width() / 2 - ($('body').width() / 2 - xp) * zoom[zoomKey] / zoom[zoomKey + 1]);
+                yp = Math.floor($('body').height() / 2 - ($('body').height() / 2 - yp) * zoom[zoomKey] / zoom[zoomKey + 1]);
+                fg.position(xp, yp);
+
+                fg.drawCoord(theme[themeKey][1], theme[themeKey][2]);
+                fg.drawEachFuncDiagraph(func);
+            }else{
+                $(this).css('background-position','0 28px');
+            }
+        });
+
+        $('#origin').click(function(){
+
+            xp = Math.floor($('body').width() / 2);
+            yp = Math.floor($('body').height() / 2);
+            fg.position(xp, yp)
+            fg.drawCoord(theme[themeKey][1], theme[themeKey][2]);
+            fg.drawEachFuncDiagraph(func);
+        });
+
+        $('#cover').dblclick(function(mouse){
+            //$('#coord_tag').hide();
+            xp = Math.floor(fg.xp - (mouse.clientX - canvas.width() / 2));
+            yp = Math.floor(fg.yp - (mouse.clientY - canvas.height() / 2));
+
+            fg.position(xp, yp)
+            fg.drawCoord(theme[themeKey][1], theme[themeKey][2]);
+            fg.drawEachFuncDiagraph(func);
+        });
+
+        $('#theme').click(function(){
+            if(themeKey == 0){
+                themeKey = 1
+                $(this).css('background-position', '-84px 0');
+                $('#coord_tag, #logo').attr('style', 'color: #fff;');
+            }else{
+                themeKey = 0;
+                $(this).css('background-position', '-56px 0');
+                $('#coord_tag, #logo').attr('style', '');
+            }
+            fg = new JFuncDiagraph(context, canvas.width(), canvas.height(), xp, yp, zoom[zoomKey], theme[themeKey][0]);
+            fg.drawCoord(theme[themeKey][1], theme[themeKey][2]);
+            fg.drawEachFuncDiagraph(func);
+        });
+
+        $('#cover').mousemove(function(mouse){
+            $('#coord_tag p').eq(0).html('x = ' + ((mouse.clientX - xp) / zoom[zoomKey]));
+            $('#coord_tag p').eq(1).html('y = ' + ((yp - mouse.clientY) / zoom[zoomKey]))
+        });
+
+        $('#handle_open').click(function(){
+            $('#panel').animate({
+                right: 0
+            }, 500, 'easeOutBounce', function(){
+                $('#panel').animate({
+                    top: 0
+                }, 300, 'easeOutBounce');
+                $('#handle_open').hide();
+                $('#handle_close').show();
+            });
+        });
+
+        $('#handle_close').click(function(){
+            var ph = $('#panel').height();
+            $('#panel').animate({
+                right: -276
+            }, 500, 'easeOutElastic', function(){
+                $('#panel').animate({
+                    top: -(ph-25)
+                }, 300, 'easeOutElastic');
+                $('#handle_open').show();
+                $('#handle_close').hide();
+            });
+        });
+
+        $('#add_button').click(function(){
+            if($('.func').length == 64){
+                alert('Expressions list is full!');
+            }else{
+                newExpr = $('#func_input textarea').val();
+                //alert(newExpr);
+                if(newExpr != ''){
+                    func.push(new Array(transform(newExpr), '#' + newColor, 1));
+
+                    fg = new JFuncDiagraph(context, canvas.width(), canvas.height(), xp, yp, zoom[zoomKey], theme[themeKey][0]);
+                    fg.drawCoord(theme[themeKey][1], theme[themeKey][2]);
+                    //alert(func);
+                    if(fg.drawEachFuncDiagraph(func)){
+
+                        $('#func_list').append('<li class="func" id="' + func.length + '"><span class="func_color"><div style="background-color:#' + newColor + '"><p class="visible" onclick = "return hideFunc(' + func.length + ')";></p><p class="invisible" onclick = "return showFunc(' + func.length + ')";></p></div></span><span class="func_expr">' + outform(newExpr) + '</span><span class="func_del" onclick = "return delFunc(' + func.length + ')";></span></li>');
+                        $('#func_input textarea').val('');
+                    }else{
+                        func.pop();
+                        $('#func_input textarea').shake(200, 8, 0.9);
+                        $('#func_input textarea').focus();
+                    }
+                }else{
+                    $('#func_input textarea').shake(200, 8, 0.9);
+                    $('#func_input textarea').focus();
+                }
+            }
+
+        });
+        var newExpr;
+        var newColor;
+
+        var rand = Math.floor(Math.random() * example.length);
+
+        $('#func_input textarea').val(example[rand][0]);
+        newColor = example[rand][1];
+        $('#add_button').click();
+
+        newColor = '000';
+        $('[color=hex000]').css('background-image', 'url(/images/lib/JFuncDiagraph/color.png)');
+
+        $('.color').click(function(){
+            //alert(newColor);
+            $('.color').not(this).css('background-image', '');
+            $(this).css('background-image', 'url(/images/lib/JFuncDiagraph/color.png)');
+            newColor = $(this).attr('color').slice(3, 6);
+            //alert(parseInt('0x' + newColor.slice(0, 1)));
+            if((parseInt('0x' + newColor.slice(0, 1)) + parseInt('0x' + newColor.slice(1, 2)) + parseInt('0x' + newColor.slice(2, 3))) / 3 > 9){
+                $(this).css('background-position', '0 7px');
+            }
+
+        });
+
+        $(window).resize(function(){
+            canvas.attr('width', $('body').width());
+            canvas.attr('height', $('body').height());
+            xp = Math.floor($('body').width() / 2);
+            yp = Math.floor($('body').height() / 2);
+            fg = new JFuncDiagraph(context, canvas.width(), canvas.height(), xp, yp, zoom[zoomKey], theme[themeKey][0]);
+            fg.drawCoord(theme[themeKey][1], theme[themeKey][2]);
+            fg.drawEachFuncDiagraph(func);
+
+            $('#help').css('top', -$('#help').height() - 45).css('left', ($('body').width()-$('#help').width()-40)/2);
+            $('#about').css('top', -$('#about').height() - 45).css('left', ($('body').width()-$('#help').width()-40)/2);
+        });
+
+        $('#help, #about, #func_input').css('top', -$('#help').height() - 45).css('left', ($('body').width()-$('#help').width()-40)/2);
+        //$('').css('top', -$('#about').height() - 45).css('left', ($('body').width()-$('#help').width()-40)/2);
+        //$('').css('top', -$('#func_input').height() - 45).css('left', ($('body').width()-$('#func_input').width()-40)/2);
+
+        $('#open_help').click(function(){
+            if($('.box:visible').length){
+                hangBox($('.box:visible'), function(){
+                    putBox($('#help'));
+                });
+            }else{
+                putBox($('#help'));
+            }
+        });
+
+        $('#open_about').click(function(){
+            if($('.box:visible').length){
+                hangBox($('.box:visible'), function(){
+                    putBox($('#about'));
+                });
+            }else{
+                putBox($('#about'));
+            }
+        });
+
+        $('#add_func span').click(function(){
+            if($('.box:visible').length){
+                hangBox($('.box:visible'), function(){
+                    putBox($('#func_input'));
+                });
+            }else{
+                putBox($('#func_input'));
+            }
+        });
+
+        $('.box_title span').click(function(){
+            hangBox($(this).parent().parent(), function(){});
+        });
+
+    });
+
+
+    //*****************************************************
+
+
+    function hangBox(obj, callback){
+        obj.animate({
+            top: - obj.height() - 45
+        }, 500, 'easeOutElastic', function(){
+            obj.hide(0, function(){
+                callback();
+            });
+        });
+    }
+
+    function putBox(obj){
+        obj.show().animate({
+            top: 50
+        }, 500, 'easeOutBounce', function(){
+
+        });
+    }
+    function delFunc(id){
+        $('#' + id).remove();
+        delete func[id - 1];
+
+        fg = new JFuncDiagraph(context, canvas.width(), canvas.height(), xp, yp, zoom[zoomKey], theme[themeKey][0]);
+        fg.drawCoord(theme[themeKey][1], theme[themeKey][2]);
+        fg.drawEachFuncDiagraph(func);
+    }
+    function hideFunc(id){
+        $('#' + id).find('.visible').hide();
+        $('#' + id).find('.invisible').show();
+        func[id - 1][2] = 0;
+
+        fg = new JFuncDiagraph(context, canvas.width(), canvas.height(), xp, yp, zoom[zoomKey], theme[themeKey][0]);
+        fg.drawCoord(theme[themeKey][1], theme[themeKey][2]);
+        fg.drawEachFuncDiagraph(func);
+    }
+    function showFunc(id){
+        $('#' + id).find('.visible').show();
+        $('#' + id).find('.invisible').hide();
+        func[id - 1][2] = 1;
+
+        fg = new JFuncDiagraph(context, canvas.width(), canvas.height(), xp, yp, zoom[zoomKey], theme[themeKey][0]);
+        fg.drawCoord(theme[themeKey][1], theme[themeKey][2]);
+        fg.drawEachFuncDiagraph(func);
+    }
+
+    function transform(expr){
+        expr = expr.replace(/abs/g, 'Math.abs');
+        expr = expr.replace(/floor/g, 'Math.floor');
+        expr = expr.replace(/ceil/g, 'Math.ceil');
+        expr = expr.replace(/round/g, 'Math.round');
+        expr = expr.replace(/pow/g, 'Math.pow');
+        expr = expr.replace(/log/g, 'Math.log');
+        expr = expr.replace(/arcsin/g, 'arcs');
+        expr = expr.replace(/arccos/g, 'arcc');
+        expr = expr.replace(/arctan/g, 'arct');
+        expr = expr.replace(/sin/g, 'Math.sin');
+        expr = expr.replace(/cos/g, 'Math.cos');
+        expr = expr.replace(/tan/g, 'Math.tan');
+        expr = expr.replace(/arcs/g, 'Math.asin');
+        expr = expr.replace(/arcc/g, 'Math.acos');
+        expr = expr.replace(/arct/g, 'Math.atan');
+        expr = expr.replace(/PI/g, 'Math.PI');
+        expr = expr.replace(/E/g, 'Math.E');
+        //expr = expr.replace(/y/g, '');
+        //expr = expr.replace(/=/g, '');
+        //expr = expr.replace(/;/g, '');
+        //expr = expr.replace(/f\(x\)/g, '');
+        return expr;
+    }
+
+    function outform(expr){
+        expr = expr.replace(/\s/g, '');
+        expr = expr.replace(/,/g, ', ');
+        //expr = expr.replace(/y/g, '');
+        expr = expr.replace(/;/g, ';<br />');
+        expr = expr.replace(/=/g, ' = ');
+        //expr = expr.replace(/;/g, '');
+        expr = expr.replace(/f\(x\)/g, 'y');
+        return expr;
+    }
+
+    function setPalette(handle){
+        var html = '';
+        for(var r = 0x0; r <= 0xf; r+=3){
+            for(var g = 0x0; g <= 0xf; g+=3){
+                for(var b = 0x0; b <= 0xf; b+=3){
+                    html += '<span class="color" color="hex' + r.toString(16) + g.toString(16) + b.toString(16) + '" style="background-color: #' + r.toString(16) + g.toString(16) + b.toString(16) + '"></span>';
+                }
+            }
+        }
+        handle.append(html);
+    }
+    </script>
+    <div id="body">
+    <canvas id="canvas" width="1440" height="381"></canvas>
+    <div id="logo">
+        <p>JfuncDiagraph v0.4.1</p>
+    </div>
+    <div id="coord_tag">
+        <p>x = -12</p>
+        <p>y = -5.90625</p>
+    </div>
+    <div id="cover"></div>
+    <div id="button_right">
+        <span id="zoom_level" title="Level" style="background-position: -56px 0px;"></span>
+        <span id="zoom_out" title="Zoom Out"></span>
+        <span id="zoom_in" title="Zoom In"></span>
+    </div>
+    <div id="button_left">
+        <span id="theme" title="Light/Dark"></span>
+        <span id="origin" title="To Origin"></span>
+    </div>
+    <div id="copyright">Copyright © 2012 <a href="http://www.oglen.net">oglen.net</a>. All rights reserved.</div>
+    <div id="panel">
+        <div id="panel_title">
+            <span id="panel_name"><img src="/images/lib/JFuncDiagraph/text_list_bullets.png"> Function List</span>
+            <span id="open_help">Help</span>
+            <span id="open_about">About</span>
+        </div>
+        <ul id="func_list"></ul>
+        <div id="add_func">
+            <p>Add Function</p>
+            <span></span>
+        </div>
+        <div id="handle">
+            <span id="handle_open"></span>
+            <span id="handle_close"></span>
+        </div>
+    </div>
+    <div id="help" class="box" style="top: -547px; left: 550px;">
+        <div class="box_title">
+            <h1><img src="/images/lib/JFuncDiagraph/help.png"> Help</h1>
+            <span></span>
+        </div>
+        <h2>Symbol</h2>
+        <p>
+            Plus : +<br>
+            Minus : -<br>
+            Product : *<br>
+            Division : /<br>
+        </p>
+        <h2>Function</h2>
+        <p>
+            Power : pow(x, n)<br>
+            Natural Logarithm : log(x)<br>
+            Trigonometric : sin(x), cos(x), tan(x), arcsin(x), arccos(x), arctan(x)<br>
+            Absolute : abs(x)<br>
+            Floor : floor(x)<br>
+            Ceil : ceil(x)<br>
+            Round : round(x)<br>
+        </p>
+        <h2>Constant</h2>
+        <p>
+            PI, E
+        </p>
+        <h2>Example</h2>
+        <p>
+            y = log(x)<br>
+            y = arctan(x)<br>
+            y = 1/(1-pow(E, x/(1-x)))<br>
+        </p>
+        <h2>Operation</h2>
+        <p>
+            Double-click canvas to move coordinate plane.
+        </p>
+    </div>
+    <div id="about" class="box" style="top: -175px; left: 550px;">
+        <div class="box_title">
+            <h1><img src="/images/lib/JFuncDiagraph/attach.png"> About</h1>
+            <span></span>
+        </div>
+        <img src="/images/lib/JFuncDiagraph/logo.png" id="about_logo" align="left">
+        <h2>JfuncDiagraph v0.4.1</h2>
+        <p>JfuncDiagraph is a mathematical function diagraph written by javascript.</p>
+        <p>Copyright © 2012 <a href="http://oglen.net">oglen.net</a>. All rights reserved.</p>
+    </div>
+    <div id="func_input" class="box" style="top: -547px; left: 550px;">
+    <div class="box_title">
+        <h1><img src="/images/lib/JFuncDiagraph/vector.png"> Add Function</h1>
+        <span></span>
+    </div>
+    <!--<p>f(x) =</p>-->
+    <textarea>x=0.1*q*sin(q);y=0.1*q*cos(q);</textarea>
+    <div id="palette">
+    <span class="color" color="hex000" style="background-color: rgb(0, 0, 0); background-image: url(/images/lib/JFuncDiagraph/color.png);"></span>
+    <span class="color" color="hex003" style="background-color: #003"></span>
+    <span class="color" color="hex006" style="background-color: #006"></span>
+    <span class="color" color="hex009" style="background-color: #009"></span>
+    <span class="color" color="hex00c" style="background-color: #00c"></span>
+    <span class="color" color="hex00f" style="background-color: #00f"></span>
+    <span class="color" color="hex030" style="background-color: #030"></span>
+    <span class="color" color="hex033" style="background-color: #033"></span>
+    <span class="color" color="hex036" style="background-color: #036"></span>
+    <span class="color" color="hex039" style="background-color: #039"></span>
+    <span class="color" color="hex03c" style="background-color: #03c"></span>
+    <span class="color" color="hex03f" style="background-color: #03f"></span>
+    <span class="color" color="hex060" style="background-color: #060"></span>
+    <span class="color" color="hex063" style="background-color: #063"></span>
+    <span class="color" color="hex066" style="background-color: #066"></span>
+    <span class="color" color="hex069" style="background-color: #069"></span>
+    <span class="color" color="hex06c" style="background-color: #06c"></span>
+    <span class="color" color="hex06f" style="background-color: #06f"></span>
+    <span class="color" color="hex090" style="background-color: #090"></span>
+    <span class="color" color="hex093" style="background-color: #093"></span>
+    <span class="color" color="hex096" style="background-color: #096"></span>
+    <span class="color" color="hex099" style="background-color: #099"></span>
+    <span class="color" color="hex09c" style="background-color: #09c"></span>
+    <span class="color" color="hex09f" style="background-color: #09f"></span>
+    <span class="color" color="hex0c0" style="background-color: #0c0"></span>
+    <span class="color" color="hex0c3" style="background-color: #0c3"></span>
+    <span class="color" color="hex0c6" style="background-color: #0c6"></span>
+    <span class="color" color="hex0c9" style="background-color: #0c9"></span>
+    <span class="color" color="hex0cc" style="background-color: #0cc"></span>
+    <span class="color" color="hex0cf" style="background-color: #0cf"></span>
+    <span class="color" color="hex0f0" style="background-color: #0f0"></span>
+    <span class="color" color="hex0f3" style="background-color: #0f3"></span>
+    <span class="color" color="hex0f6" style="background-color: #0f6"></span>
+    <span class="color" color="hex0f9" style="background-color: #0f9"></span>
+    <span class="color" color="hex0fc" style="background-color: #0fc"></span>
+    <span class="color" color="hex0ff" style="background-color: #0ff"></span>
+    <span class="color" color="hex300" style="background-color: #300"></span>
+    <span class="color" color="hex303" style="background-color: #303"></span>
+    <span class="color" color="hex306" style="background-color: #306"></span>
+    <span class="color" color="hex309" style="background-color: #309"></span>
+    <span class="color" color="hex30c" style="background-color: #30c"></span>
+    <span class="color" color="hex30f" style="background-color: #30f"></span>
+    <span class="color" color="hex330" style="background-color: #330"></span>
+    <span class="color" color="hex333" style="background-color: #333"></span>
+    <span class="color" color="hex336" style="background-color: #336"></span>
+    <span class="color" color="hex339" style="background-color: #339"></span>
+    <span class="color" color="hex33c" style="background-color: #33c"></span>
+    <span class="color" color="hex33f" style="background-color: #33f"></span>
+    <span class="color" color="hex360" style="background-color: #360"></span>
+    <span class="color" color="hex363" style="background-color: #363"></span>
+    <span class="color" color="hex366" style="background-color: #366"></span>
+    <span class="color" color="hex369" style="background-color: #369"></span>
+    <span class="color" color="hex36c" style="background-color: #36c"></span>
+    <span class="color" color="hex36f" style="background-color: #36f"></span>
+    <span class="color" color="hex390" style="background-color: #390"></span>
+    <span class="color" color="hex393" style="background-color: #393"></span>
+    <span class="color" color="hex396" style="background-color: #396"></span>
+    <span class="color" color="hex399" style="background-color: #399"></span>
+    <span class="color" color="hex39c" style="background-color: #39c"></span>
+    <span class="color" color="hex39f" style="background-color: #39f"></span>
+    <span class="color" color="hex3c0" style="background-color: #3c0"></span>
+    <span class="color" color="hex3c3" style="background-color: #3c3"></span>
+    <span class="color" color="hex3c6" style="background-color: #3c6"></span>
+    <span class="color" color="hex3c9" style="background-color: #3c9"></span>
+    <span class="color" color="hex3cc" style="background-color: #3cc"></span>
+    <span class="color" color="hex3cf" style="background-color: #3cf"></span>
+    <span class="color" color="hex3f0" style="background-color: #3f0"></span>
+    <span class="color" color="hex3f3" style="background-color: #3f3"></span>
+    <span class="color" color="hex3f6" style="background-color: #3f6"></span>
+    <span class="color" color="hex3f9" style="background-color: #3f9"></span>
+    <span class="color" color="hex3fc" style="background-color: #3fc"></span>
+    <span class="color" color="hex3ff" style="background-color: #3ff"></span>
+    <span class="color" color="hex600" style="background-color: #600"></span>
+    <span class="color" color="hex603" style="background-color: #603"></span>
+    <span class="color" color="hex606" style="background-color: #606"></span>
+    <span class="color" color="hex609" style="background-color: #609"></span>
+    <span class="color" color="hex60c" style="background-color: #60c"></span>
+    <span class="color" color="hex60f" style="background-color: #60f"></span>
+    <span class="color" color="hex630" style="background-color: #630"></span>
+    <span class="color" color="hex633" style="background-color: #633"></span>
+    <span class="color" color="hex636" style="background-color: #636"></span>
+    <span class="color" color="hex639" style="background-color: #639"></span>
+    <span class="color" color="hex63c" style="background-color: #63c"></span>
+    <span class="color" color="hex63f" style="background-color: #63f"></span>
+    <span class="color" color="hex660" style="background-color: #660"></span>
+    <span class="color" color="hex663" style="background-color: #663"></span>
+    <span class="color" color="hex666" style="background-color: #666"></span>
+    <span class="color" color="hex669" style="background-color: #669"></span>
+    <span class="color" color="hex66c" style="background-color: #66c"></span>
+    <span class="color" color="hex66f" style="background-color: #66f"></span>
+    <span class="color" color="hex690" style="background-color: #690"></span>
+    <span class="color" color="hex693" style="background-color: #693"></span>
+    <span class="color" color="hex696" style="background-color: #696"></span>
+    <span class="color" color="hex699" style="background-color: #699"></span>
+    <span class="color" color="hex69c" style="background-color: #69c"></span>
+    <span class="color" color="hex69f" style="background-color: #69f"></span>
+    <span class="color" color="hex6c0" style="background-color: #6c0"></span>
+    <span class="color" color="hex6c3" style="background-color: #6c3"></span>
+    <span class="color" color="hex6c6" style="background-color: #6c6"></span>
+    <span class="color" color="hex6c9" style="background-color: #6c9"></span>
+    <span class="color" color="hex6cc" style="background-color: #6cc"></span>
+    <span class="color" color="hex6cf" style="background-color: #6cf"></span>
+    <span class="color" color="hex6f0" style="background-color: #6f0"></span>
+    <span class="color" color="hex6f3" style="background-color: #6f3"></span>
+    <span class="color" color="hex6f6" style="background-color: #6f6"></span>
+    <span class="color" color="hex6f9" style="background-color: #6f9"></span>
+    <span class="color" color="hex6fc" style="background-color: #6fc"></span>
+    <span class="color" color="hex6ff" style="background-color: #6ff"></span>
+    <span class="color" color="hex900" style="background-color: #900"></span>
+    <span class="color" color="hex903" style="background-color: #903"></span>
+    <span class="color" color="hex906" style="background-color: #906"></span>
+    <span class="color" color="hex909" style="background-color: #909"></span>
+    <span class="color" color="hex90c" style="background-color: #90c"></span>
+    <span class="color" color="hex90f" style="background-color: #90f"></span>
+    <span class="color" color="hex930" style="background-color: #930"></span>
+    <span class="color" color="hex933" style="background-color: #933"></span>
+    <span class="color" color="hex936" style="background-color: #936"></span>
+    <span class="color" color="hex939" style="background-color: #939"></span>
+    <span class="color" color="hex93c" style="background-color: #93c"></span>
+    <span class="color" color="hex93f" style="background-color: #93f"></span>
+    <span class="color" color="hex960" style="background-color: #960"></span>
+    <span class="color" color="hex963" style="background-color: #963"></span>
+    <span class="color" color="hex966" style="background-color: #966"></span>
+    <span class="color" color="hex969" style="background-color: #969"></span>
+    <span class="color" color="hex96c" style="background-color: #96c"></span>
+    <span class="color" color="hex96f" style="background-color: #96f"></span>
+    <span class="color" color="hex990" style="background-color: #990"></span>
+    <span class="color" color="hex993" style="background-color: #993"></span>
+    <span class="color" color="hex996" style="background-color: #996"></span>
+    <span class="color" color="hex999" style="background-color: #999"></span>
+    <span class="color" color="hex99c" style="background-color: #99c"></span>
+    <span class="color" color="hex99f" style="background-color: #99f"></span>
+    <span class="color" color="hex9c0" style="background-color: #9c0"></span>
+    <span class="color" color="hex9c3" style="background-color: #9c3"></span>
+    <span class="color" color="hex9c6" style="background-color: #9c6"></span>
+    <span class="color" color="hex9c9" style="background-color: #9c9"></span>
+    <span class="color" color="hex9cc" style="background-color: #9cc"></span>
+    <span class="color" color="hex9cf" style="background-color: #9cf"></span>
+    <span class="color" color="hex9f0" style="background-color: #9f0"></span>
+    <span class="color" color="hex9f3" style="background-color: #9f3"></span>
+    <span class="color" color="hex9f6" style="background-color: #9f6"></span>
+    <span class="color" color="hex9f9" style="background-color: #9f9"></span>
+    <span class="color" color="hex9fc" style="background-color: #9fc"></span>
+    <span class="color" color="hex9ff" style="background-color: #9ff"></span>
+    <span class="color" color="hexc00" style="background-color: #c00"></span>
+    <span class="color" color="hexc03" style="background-color: #c03"></span>
+    <span class="color" color="hexc06" style="background-color: #c06"></span>
+    <span class="color" color="hexc09" style="background-color: #c09"></span>
+    <span class="color" color="hexc0c" style="background-color: #c0c"></span>
+    <span class="color" color="hexc0f" style="background-color: #c0f"></span>
+    <span class="color" color="hexc30" style="background-color: #c30"></span>
+    <span class="color" color="hexc33" style="background-color: #c33"></span>
+    <span class="color" color="hexc36" style="background-color: #c36"></span>
+    <span class="color" color="hexc39" style="background-color: #c39"></span>
+    <span class="color" color="hexc3c" style="background-color: #c3c"></span>
+    <span class="color" color="hexc3f" style="background-color: #c3f"></span>
+    <span class="color" color="hexc60" style="background-color: #c60"></span>
+    <span class="color" color="hexc63" style="background-color: #c63"></span>
+    <span class="color" color="hexc66" style="background-color: #c66"></span>
+    <span class="color" color="hexc69" style="background-color: #c69"></span>
+    <span class="color" color="hexc6c" style="background-color: #c6c"></span>
+    <span class="color" color="hexc6f" style="background-color: #c6f"></span>
+    <span class="color" color="hexc90" style="background-color: #c90"></span>
+    <span class="color" color="hexc93" style="background-color: #c93"></span>
+    <span class="color" color="hexc96" style="background-color: #c96"></span>
+    <span class="color" color="hexc99" style="background-color: #c99"></span>
+    <span class="color" color="hexc9c" style="background-color: #c9c"></span>
+    <span class="color" color="hexc9f" style="background-color: #c9f"></span>
+    <span class="color" color="hexcc0" style="background-color: #cc0"></span>
+    <span class="color" color="hexcc3" style="background-color: #cc3"></span>
+    <span class="color" color="hexcc6" style="background-color: #cc6"></span>
+    <span class="color" color="hexcc9" style="background-color: #cc9"></span>
+    <span class="color" color="hexccc" style="background-color: #ccc"></span>
+    <span class="color" color="hexccf" style="background-color: #ccf"></span>
+    <span class="color" color="hexcf0" style="background-color: #cf0"></span>
+    <span class="color" color="hexcf3" style="background-color: #cf3"></span>
+    <span class="color" color="hexcf6" style="background-color: #cf6"></span>
+    <span class="color" color="hexcf9" style="background-color: #cf9"></span>
+    <span class="color" color="hexcfc" style="background-color: #cfc"></span>
+    <span class="color" color="hexcff" style="background-color: #cff"></span>
+    <span class="color" color="hexf00" style="background-color: #f00"></span>
+    <span class="color" color="hexf03" style="background-color: #f03"></span>
+    <span class="color" color="hexf06" style="background-color: #f06"></span>
+    <span class="color" color="hexf09" style="background-color: #f09"></span>
+    <span class="color" color="hexf0c" style="background-color: #f0c"></span>
+    <span class="color" color="hexf0f" style="background-color: #f0f"></span>
+    <span class="color" color="hexf30" style="background-color: #f30"></span>
+    <span class="color" color="hexf33" style="background-color: #f33"></span>
+    <span class="color" color="hexf36" style="background-color: #f36"></span>
+    <span class="color" color="hexf39" style="background-color: #f39"></span>
+    <span class="color" color="hexf3c" style="background-color: #f3c"></span>
+    <span class="color" color="hexf3f" style="background-color: #f3f"></span>
+    <span class="color" color="hexf60" style="background-color: #f60"></span>
+    <span class="color" color="hexf63" style="background-color: #f63"></span>
+    <span class="color" color="hexf66" style="background-color: #f66"></span>
+    <span class="color" color="hexf69" style="background-color: #f69"></span>
+    <span class="color" color="hexf6c" style="background-color: #f6c"></span>
+    <span class="color" color="hexf6f" style="background-color: #f6f"></span>
+    <span class="color" color="hexf90" style="background-color: #f90"></span>
+    <span class="color" color="hexf93" style="background-color: #f93"></span>
+    <span class="color" color="hexf96" style="background-color: #f96"></span>
+    <span class="color" color="hexf99" style="background-color: #f99"></span>
+    <span class="color" color="hexf9c" style="background-color: #f9c"></span>
+    <span class="color" color="hexf9f" style="background-color: #f9f"></span>
+    <span class="color" color="hexfc0" style="background-color: #fc0"></span>
+    <span class="color" color="hexfc3" style="background-color: #fc3"></span>
+    <span class="color" color="hexfc6" style="background-color: #fc6"></span>
+    <span class="color" color="hexfc9" style="background-color: #fc9"></span>
+    <span class="color" color="hexfcc" style="background-color: #fcc"></span>
+    <span class="color" color="hexfcf" style="background-color: #fcf"></span>
+    <span class="color" color="hexff0" style="background-color: #ff0"></span>
+    <span class="color" color="hexff3" style="background-color: #ff3"></span>
+    <span class="color" color="hexff6" style="background-color: #ff6"></span>
+    <span class="color" color="hexff9" style="background-color: #ff9"></span>
+    <span class="color" color="hexffc" style="background-color: #ffc"></span>
+    <span class="color" color="hexfff" style="background-color: #fff"></span>
+    </div>
+    <button type="button" id="add_button"></button>
+    </div>
+    </div>
+
+{%- endblock  -%}

@@ -1,0 +1,8 @@
+{%- extends 'layout.html' -%}
+{%- block wrap -%}
+    <ul>
+    {% for m in maps %}
+        <li><a href="{{ m.url }}">{{ m.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}

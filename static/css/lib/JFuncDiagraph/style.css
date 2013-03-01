@@ -1,0 +1,448 @@
+html, body, #body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.box_title:after, #button_right:after, #button_left:after, #panel_title:after, #func_list li:after, #func_set:after, #add_func:after{
+    content:".";
+    display: block;
+    font-size: 0px;
+    line-height: 0px;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#canvas, #cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#button_right{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 87px;
+}
+#zoom_level{
+    background-image: url(/images/lib/JFuncDiagraph/zoom.png);
+    float: left;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    margin: 0 3px 0 0;
+}
+#zoom_in, #zoom_out{
+    background-image: url(/images/lib/JFuncDiagraph/buttons.png);
+    float: left;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+}
+#zoom_out{
+    background-position: 0 0;
+}
+#zoom_in{
+    background-position: -28px 0;
+}
+#zoom_out:hover{
+    background-position: 0 28px;
+}
+#zoom_in:hover{
+    background-position: -28px 28px;
+}
+#button_left{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 62px;
+}
+#origin, #theme, #line{
+    margin: 0 3px 0 0;
+    background-image: url(/images/lib/JFuncDiagraph/buttons.png);
+    float: left;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+}
+#origin{
+    background-position: -112px 0;
+}
+#origin:hover{
+    background-position: -112px 28px;
+}
+#theme{
+    background-position: -56px 0;
+}
+#line{
+    background-position: -250px 0;
+}
+#logo{
+    font-size: 12px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    color: #000;
+    font-family: 'Ubuntu', Verdana, serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    line-height: 16px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#logo p{
+    margin: 0;
+}
+#coord_tag{
+    font-size: 12px;
+    top: 40px;
+    left: 20px;
+    position: absolute;
+    color: #000;
+    font-family: Courier New;
+    padding: 0;
+    line-height: 16px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#coord_tag p{
+    margin: 0;
+}
+#panel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: #f6f6f6;
+    padding: 0;
+    -webkit-box-shadow: 0px 1px 5px #000;
+    -moz-box-shadow: 0px 1px 5px #000;
+    box-shadow: 0px 1px 5px #000;
+    -moz-border-radius: 0 0 0 4px;
+    -webkit-border-radius: 0 0 0 4px;
+    border-radius: 0 0 0 4px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+#handle{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    padding: 0;
+    margin: 0 0 -16px 0;
+    clear: both;
+}
+#panel_title{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    margin: 10px 0 0 0;
+    padding: 10px 20px;
+    background-color: #ccc;
+    line-height: 16px;
+}
+#panel_title span{
+    font-size: 12px;
+    font-family: 'Ubuntu', Verdana, serif;
+    font-weight: bold;
+    line-height: 16px;
+    color: #333;
+    cursor: pointer;
+}
+#panel_title img{
+    vertical-align: -4px;
+}
+#open_help, #open_about{
+    padding: 0 0 0 10px;
+    float: right;
+}
+#open_help:hover, #open_about:hover{
+    color: #fff;
+}
+#panel_name{
+    float: left;
+}
+#handle_open, #handle_close{
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/lib/JFuncDiagraph/buttons_s.png);
+    cursor: pointer;
+}
+#handle_open{
+    background-position: -80px 0;
+    display: none;
+}
+#handle_open:hover{
+    background-position: -80px 16px;
+}
+#handle_close{
+    background-position: -64px 0;
+}
+#handle_close:hover{
+    background-position: -64px 16px;
+}
+#func_list{
+    font-size: 12px;
+    font-family: Courier New;
+    margin: 0;
+    padding: 0;
+}
+#func_list li{
+    list-style: none;
+    line-height: 16px;
+    padding: 5px 10px 5px 0;
+    margin: 0;
+    border-color: #999;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+#add_func{
+    padding: 0 10px 0 38px;
+    margin: 13px 0 10px 0;
+}
+#add_func span{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    float: right;
+    height: 16px;
+    width: 16px;
+    padding: 0;
+    margin: 0;
+    background-image: url(/images/lib/JFuncDiagraph/buttons_s.png);
+    background-position: -112px 0;
+    cursor: pointer;
+}
+#add_func span:hover{
+    background-position: -112px 16px;
+}
+#add_func p{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', Verdana, serif;
+    line-height: 16px;
+}
+
+#func_set{
+    clear: both;
+    margin: 0;
+    padding: 8px 0 0 0;
+}
+#palette{
+    width: 252px;
+    float: left;
+    margin: 10px 0 0 0;
+
+}
+.color{
+    float: left;
+    height: 7px;
+    width: 7px;
+    cursor: pointer;
+    margin: 0;
+}
+.func_del{
+    float: right;
+    height: 16px;
+    width: 16px;
+    background-image: url(/images/lib/JFuncDiagraph/buttons_s.png);
+    cursor: pointer;
+    background-position: -16px 0;
+    margin: 8px 0;
+}
+.func_del:hover{
+    background-position: -16px 16px;
+}
+.func_color{
+    float: left;
+    height: 32px;
+    width: 30px;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+}
+.func_color div{
+    height: 16px;
+    width: 16px;
+    margin: 2px 0;
+    padding: 6px;
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+    -webkit-box-shadow: 0px 0px 3px #000;
+    -moz-box-shadow: 0px 0px 3px #000;
+    box-shadow: 0px 0px 3px #000;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.visible, .invisible{
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    width: 16px;
+    background-image: url(/images/lib/JFuncDiagraph/buttons_s.png);
+    cursor: pointer;
+}
+.visible{
+    background-position: -96px 0;
+}
+.invisible{
+    background-position: -96px 16px;
+    display: none;
+}
+.func_expr{
+    float: left;
+    width: 230px;
+    margin: 0 0 0 8px;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    word-wrap: break-word;
+    word-break: normal;
+}
+#copyright{
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    font-family: 'Ubuntu', Verdana, serif;
+    color: #666;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+#copyright a{
+    font-family: 'Ubuntu', Verdana, serif;
+    color: #666;
+    font-size: 10px;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+#copyright a:hover{
+    color: #69f;
+}
+.box{
+    position: absolute;
+    background-color: #f6f6f6;
+    padding: 20px;
+    width: 300px;
+    font-size: 12px;
+    font-family: 'Ubuntu', Verdana, serif;
+    -webkit-box-shadow: 0px 1px 5px #000;
+    -moz-box-shadow: 0px 1px 5px #000;
+    box-shadow: 0px 1px 5px #000;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    display: none;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+}
+#func_input p{
+    font-size: 12px;
+    font-family: Courier New;
+    margin: 0;
+    padding: 0;
+}
+#func_input textarea{
+    font-size: 12px;
+    font-family: Courier New;
+    outline: medium none;
+    border: solid 1px #999;
+    height: 100px;
+    width: 292px;
+    padding: 3px;
+    resize: none;
+    margin: 8px 0 0 0;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+}
+#add_button{
+    height: 28px;
+    width: 28px;
+    float: right;
+    margin: 16px 0 0 0;
+    background-image: url(/images/lib/JFuncDiagraph/buttons.png);
+    cursor: pointer;
+    border-width: 0;
+    background-position: -140px 0px;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+#add_button:hover{
+    background-position: -140px 28px;
+}
+#add_color{
+    height: 28px;
+    width: 28px;
+    float: left;
+    background-image: url(/images/lib/JFuncDiagraph/buttons.png);
+    cursor: pointer;
+    border-width: 0;
+    background-position: -140px 0px;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+.box_title{
+    background-color: #ccc;
+    margin: -10px -20px 10px -20px;
+    padding: 10px 20px;
+}
+.box_title h1{
+    float: left;
+    height: 16px;
+    font-size: 12px;
+    font-family: 'Ubuntu', Verdana, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 16px;
+}
+.box_title img{
+    vertical-align: -4px;
+}
+.box_title span{
+    float: right;
+    height: 16px;
+    width: 16px;
+    background-image: url(/images/lib/JFuncDiagraph/buttons_s.png);
+    cursor: pointer;
+    background-position: -16px 0;
+}
+.box_title span:hover{
+    background-position: -16px 16px;
+}
+.box h2{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Ubuntu', Verdana, serif;
+    margin: 5px 0;
+}
+#about_logo{
+    margin: 5px 10px 0 0;
+}
+.box p{
+    font-size: 12px;
+    font-family: 'Ubuntu', Verdana, serif;
+    margin: 8px 0;
+    line-height: 18px;
+}
+.box a{
+    color: #000;
+    text-decoration: none;
+}
+.box a:hover{
+    color: #69f;
+}

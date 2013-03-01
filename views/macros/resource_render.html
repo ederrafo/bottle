@@ -1,0 +1,18 @@
+{% macro render_css_to_response(css_list) -%}
+        {% if css_list %}
+            {% for css in css_list %}
+{#                <link type="text/css" rel="stylesheet" href="{{ 'mat_domain'|get_domain_name }}{{ css }}" />#}
+                <link charset="utf-8"  type="text/css" rel="stylesheet" href="{{ 'mat_domain'|get_domain_url(css) }}" />
+            {% endfor %}
+        {% endif %}
+{%- endmacro %}
+{% macro render_script_to_response( script_list) -%}
+        {% if script_list %}
+            {% for script in script_list %}
+{#                <script type="text/javascript" src="{{ 'mat_domain'|get_domain_name }}{{ script }}"></script>#}
+                <script charset="utf-8" type="text/javascript" src="{{ 'mat_domain'|get_domain_url(script) }}"></script>
+            {% endfor %}
+        {% endif %}
+{%- endmacro %}
+
+

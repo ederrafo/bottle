@@ -1,0 +1,14 @@
+{%- extends 'layout.html' -%}
+{%- block wrap -%}
+    {% if name %}
+        hello,  {{ name }}!
+    {% else %}
+        hello, stranger!
+    {% endif %}
+{#    {% if time %}#}
+{#    <br/>#}
+{#    written on: {{ time|datetimeformat }}#}
+{#    <br/>#}
+{#    publication date: {{ time|datetimeformat('%d-%m-%Y') }}#}
+{#    {%endif%}#}
+{% endblock %}

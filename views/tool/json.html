@@ -1,0 +1,67 @@
+{%- extends 'layout.html' -%}
+{%- block wrap -%}
+    <!--
+    <div class="a" id="header">
+        <b>Json Parser Online</b>
+    </div>
+    <div class="N I" id="split" style="height: 234px; top: 39px;">
+        <textarea spellcheck="false" id="eT" class="J x P" style="height: 222px; width: 681px;">{"J":5,"0":"N"}</textarea>
+        <div class="M ui-draggable" style="left: 713px;"></div>
+        <div id="json_div" class="K F color" style="width: 1100px;">
+
+        </div>
+    </div>
+
+    -->
+    <div style="display:none;" id="jsonData"></div>
+
+    <div id="pathTips"></div>
+
+    <div id="panel"><span id="minBtn">◥</span><div id="valueAct">
+        <span class="inputTitle langID_title_1">Path: </span><input type="text" id="showPath" readonly="true" class="textInpub" /><br />
+        <span class="lableInput"><span class="inputTitle langID_title_2">Key: </span><input type="text" id="showKey" class="textInpub" /><span> :</span></span> <br />
+        <textarea id="showValue" rows="22" cols="66"></textarea><br />
+        <button id="saveBtn" type="button" class="langID_button_1">修改</button>
+        <button id="createBtn" type="button" class="langID_button_7">输入</button>
+        <button id="undoBtn" type="button" class="langID_button_5" style="visibility:hidden;">&#8678;撤销</button>
+        <button id="redoBtn" type="button" class="langID_button_6" style="visibility:hidden;">前进&#8680;</button>
+        <div id="msgBox"></div>
+
+        <button id="expandAll" type="button" class="langID_button_4">expandAll</button>
+        <button id="expandCur" type="button" class="langID_button_3">expandCur</button>
+        <button id="collapseAll" type="button" class="langID_button_2">collapseAll</button>
+        <br /><br />
+        <input type="checkbox" id="showValueInNav" checked="checked" /><label for="showValueInNav" class="langID_label_1">显示值</label>
+        <input type="checkbox" id="showIco" /><label for="showIco" class="langID_label_2">图标</label>
+        <span id="showIcoAsFolder"><input type="checkbox" id="icoAsFolder" /><label for="icoAsFolder" class="langID_label_3">文件夹风格</label></span>
+    </div></div>
+    <div id="jsonNav" class="treeNav"></div>
+    <div id="mask" style="display:none;">
+        <div id="enterInputDialog">
+            <div id="enterInputTips"><label for="enterValue">输入JSON字符串... </label><div id="_msgBox"></div></div>
+            <form id="enterForm" method="get" action="">
+
+                <textarea id="enterValue" name="enterValue"></textarea><br />
+                <button id="enterOk" type="submit">OK</button>
+
+            </form>
+        </div>
+    </div>
+{# 模板不解析以下内容 #}
+{% raw %}
+    <script>
+
+    </script>
+    <!--
+    <ol id="tweets">
+        <li data-template>
+            <img src="default.png" data-src="{{profile_image_url}}" />
+            <h3>{{from_user}}</h3>
+            <p>{{text}}<span>, {{created_at|date 'HH:mm on EEEE'}}</span></p>
+        </li>
+        <li data-template-fallback>Sorry, JavaScript required!</li>
+    </ol>
+    -->
+{% endraw %}
+    <script type="text/javascript" src="{{ 'mat_domain'|get_domain_name }}/js/lib/json-handle/pageInit.js"></script>
+{% endblock %}

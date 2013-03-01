@@ -1,0 +1,16 @@
+body
+{
+    background: rgba(35, 26, 34, 0.88);
+}
+
+
+.GameScreen
+{
+    left: 50%;
+    margin-left: -256px;
+    top: 50%;
+    margin-top: -224px;
+
+    border: #630 double 4px;
+    background: #000;
+}

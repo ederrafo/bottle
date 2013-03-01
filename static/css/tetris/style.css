@@ -1,0 +1,169 @@
+body{
+    background-color: #bbb;
+    font-family: Verdana, sans-serif, Arial;
+}
+#body{
+    /*border: solid #999 1px;*/
+    background-color: #fff;
+    width: 500px;
+    /*width: 520px;*/
+    margin: 10px auto 0px auto;
+    -webkit-box-shadow: 0px 1px 3px #000;
+    -moz-box-shadow: 0px 1px 3px #000;
+}
+#body_title{
+    border-bottom: solid #999 1px;
+    padding: 5px 8px;
+    background-color: #e6e6e6;
+    -webkit-box-shadow: 0px 1px 3px #000;
+    -moz-box-shadow: 0px 1px 3px #000;
+    -webkit-text-size-adjust: none;
+    font-family: Verdana, sans-serif, Arial;
+    font-size: 10px;
+    font-weight: bold;
+}
+#body_body{
+    /*border: solid #999 1px;*/
+    padding: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 1px 3px #000;
+    -moz-box-shadow: 0px 1px 3px #000;
+ }
+#gridding{
+    float: left;
+    /*background-color: #fff;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: #666 #ccc #ccc #666;*/
+}
+#gridding td{
+    background-color: #e2e2e2;
+    height: 18px;
+    width: 18px;
+    /*border-style: solid;*/
+    /*border-width: 0px 1px 1px 0px;*/
+    /*border-color: #666;*/
+    font-size: 0px;
+    line-height: 0px;
+    -webkit-box-shadow: 0px 1px 3px #000;
+    -moz-box-shadow: 0px 1px 3px #000;
+}
+#option{
+    float: right;
+    width: 165px;
+    margin-top: 3px;
+}
+#option p{
+    margin: 8px 0px;
+}
+#option h1{
+    color: #333;
+    background-color: #e6e6e6;
+    -webkit-text-size-adjust: none;
+    font-family: Verdana, sans-serif, Arial;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0px -8px 5px -8px;
+    padding: 3px 8px;
+    border-bottom: solid #999 1px;
+}
+#into, #keyboard, #score, #panel{
+    color: #333;
+    background-color: #fff;
+    padding: 0px 8px 5px 8px;
+//border-style: solid;
+//border-width: 0px 1px 1px 0px;
+    border-color: #666;
+    margin-bottom: 10px;
+    -webkit-text-size-adjust: none;
+    font-family: Verdana, sans-serif, Arial;
+    font-size: 10px;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 1px 3px #000;
+    -moz-box-shadow: 0px 1px 3px #000;
+}
+#speed{
+    margin: 5px auto 0px auto;
+    width: 149px;
+}
+#speed td{
+    color: #333;
+    padding: 3px;
+}
+#clicker{
+    margin: 0 auto;
+    margin: 5px auto;
+}
+#clicker td{
+    color: #333;
+    padding: 3px;
+    font-family: Tahoma;
+    width: 40px;
+    text-align: center;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+#start, #turn, #left, #right, #down, #speed td{
+    background-color: #fff;
+    /*border-style: solid;*/
+    /*border-width: 0px 1px 1px 0px;*/
+    /*border-color: #666;*/
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 3px #000;
+    -moz-box-shadow: 0px 1px 3px #000;
+    -webkit-text-size-adjust: none;
+    font-family: Verdana, sans-serif, Arial;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    }
+#restart{
+    color: #333;
+    padding: 3px;
+    text-align: center;
+    background-color: #fff;
+    /*border-style: solid;*/
+    /*border-width: 0px 1px 1px 0px;*/
+    /*border-color: #666;*/
+    margin: 10px auto 5px auto;
+    cursor: pointer;
+    width: 137px;
+    -webkit-box-shadow: 0px 1px 3px #000;
+    -moz-box-shadow: 0px 1px 3px #000;
+    -webkit-text-size-adjust: none;
+    font-family: Verdana, sans-serif, Arial;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    }
+.click{
+    background-color: #333;
+}
+#about{
+    text-align: right;
+    font-family: Verdana, sans-serif, Arial;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+}
+#about a{
+    text-decoration: none;
+    color: #333;
+}
+#about a:hover{
+    color: #03f;
+}
+.clear{
+    clear: both;
+    border-width: 0px;
+}
