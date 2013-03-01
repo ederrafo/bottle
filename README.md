@@ -1,3 +1,3 @@
-bottle:
+#bottle:
 这是一个用python的一个web框架（bottle）所编写的一个web系统，此系统主要收集自己平时遇到的一些功能或特效的网站，
 里面的js和css以及python源码可能是来自特效网站的源码。
