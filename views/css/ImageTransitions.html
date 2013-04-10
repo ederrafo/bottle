@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experimental CSS3 Animations for Image Transitions" />
+    <meta name="keywords" content="images, transition, animation, css3, jquery, 3d, 3d transform, webkit" />
+    <meta name="author" content="Pedro Botelho for Codrops" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/se/imagetransitions/default.css" />
+    <link rel="stylesheet" id="style-id" type="text/css" href="/css/se/imagetransitions/style1.css" />
+    <script type="text/javascript" src="/js/se/modernizr.custom.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Experimental <span>CSS3</span> Animations <span>for (3D) Image Transitions <strong id="message">Webkit only!</strong></span></h1>
+        <p class="codrops-demos">
+            <a class="current-demo" href="javascript:void(0);" data-css="style1.css" >Flip</a>
+            <a href="javascript:void(0);" data-css="style2.css" >Rotation</a>
+            <a href="javascript:void(0);" data-css="style3.css" >Multi-flip</a>
+            <a href="javascript:void(0);" data-css="style4.css" >Cube</a>
+            <a href="javascript:void(0);" data-css="style5.css" >Unfold</a>
+            <a href="javascript:void(0);" data-css="style6.css" >Others</a>
+        </p>
+    </header>
+    <div class="te-container">
+        <div class="te-controls">
+            <select id="type">
+                <option value="te-flip1">Flip 1</option>
+                <option value="te-flip2">Flip 2</option>
+                <option value="te-flip3">Flip 3</option>
+                <option value="te-flip4">Flip 4</option>
+            </select>
+            <a id="te-next" href="#" class="te-next">next</a>
+            <div class="te-shadow"></div>
+        </div>
+        <div id="te-wrapper" class="te-wrapper">
+            <div class="te-images">
+                <img src="/images/se/imagetransitions/1.jpg"/>
+                <img src="/images/se/imagetransitions/2.jpg"/>
+                <img src="/images/se/imagetransitions/3.jpg"/>
+                <img src="/images/se/imagetransitions/4.jpg"/>
+                <img src="/images/se/imagetransitions/5.jpg"/>
+            </div>
+            <div class="te-cover">
+                <img src="/images/se/imagetransitions/1.jpg"/>
+            </div>
+            <div class="te-transition">
+                <div class="te-card">
+                    <div class="te-front"></div>
+                    <div class="te-back"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/js/se/imagetransitions/jquery.transitions.js"></script>
+
+<script type="text/javascript" >
+    $(function() {
+
+        if( !Modernizr.csstransforms3d ){
+            $('#message').show();
+        }
+        var style_id = $("#style-id");
+        var types = {
+            "Flip":{num:4,callback:flip_html},
+            "Rotation":{num:5,callback:rotation_html},
+            "Multi-flip":{num:3,callback:multiflip_html},
+            "Cube":{num:4,callback:cube_html},
+            "Unfold":{num:2,callback:unfold_html},
+            "Others":{num:7,callback:rotation_html}
+        };
+        $(".codrops-demos>a").each(function(){
+            $(this).bind('click',function(){
+                var current = $(".codrops-demos>a.current-demo");
+               {# $(".codrops-demos>a").each(function(){
+                    $(this).removeClass("current-demo");
+                });#}
+                current.removeClass("current-demo");
+                $(this).addClass("current-demo");
+
+                var css_sytle = $(this).attr('data-css');
+                style_id.attr("href","/css/se/imagetransitions/"+css_sytle);
+                var _type = $(this).html();
+                $(".te-transition").removeClass($("#type").val()).addClass("te-"+_type.toLowerCase().replace('-','')+"1");
+                create_option(types[_type].num,_type);
+                types[_type].callback();
+
+            });
+        });
+
+    });
+    function create_option(num,type){
+        var select = $("#type");
+        var _html= "";
+        for(var i=1;i<=num;i++){
+            _html += "<option value='te-"+type.toLowerCase().replace('-','')+i+"'>"+type+" "+i+"</option>";
+        }
+        select.html(_html);
+    }
+    function flip_html(){
+        var _html = "<div class='te-card'>" +
+                        "<div class='te-front'></div>" +
+                        "<div class='te-back'></div>" +
+                    "</div>";
+        $(".te-transition").html(_html);
+    }
+
+    function rotation_html(){
+        var _html="<div class='te-front'></div><div class='te-back'></div>";
+        $(".te-transition").html(_html);
+    }
+
+    function multiflip_html(){
+        var _html = "";
+        for(var i=1;i<=7;i++){
+            _html+= '<div class="te-card te-flip'+i+'">'+
+                        '<div class="te-front"></div>'+
+                        '<div class="te-back"></div>'+
+                    '</div>';
+        }
+        $(".te-transition").html(_html);
+    }
+
+    function cube_html(){
+        var _html = '<div class="te-cube-front te-cube-face te-front"></div>'+
+                '<div class="te-cube-top te-cube-face te-back"></div>'+
+                '<div class="te-cube-bottom te-cube-face te-back"></div>'+
+                '<div class="te-cube-right te-cube-face te-back"></div>'+
+                '<div class="te-cube-left te-cube-face te-back"></div>';
+        $(".te-transition").html(_html);
+    }
+
+    function unfold_html(){
+        var _html_f = "";
+        var _html_b = "";
+        for(var i=1;i<=3;i++){
+            _html_f+= '<div class="te-front te-front'+i+'"></div>';
+            _html_b+= '<div class="te-back te-back'+i+'"></div>';
+        }
+        $(".te-transition").html(_html_f+_html_b);
+    }
+
+</script>
+</body>
+</html>

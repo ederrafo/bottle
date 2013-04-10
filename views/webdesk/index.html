@@ -1,11 +1,11 @@
 {%- extends 'layout.html' -%}
 {%- block wrap -%}
 <script type="text/javascript">
-    var http_url = "{{ 'mat_domain'|get_domain_name }}/images";
+    var http_url = "{{ 'mat_domain'|get_config_domain_name }}/images";
 </script>
 <div id="wrap"></div>
 <div id="wrap-window"></div>
-<div id="loader"><img src="{{ 'mat_domain'|get_domain_name }}/images/loader.gif" alt=""></div>
+<div id="loader"><img src="{{ 'mat_domain'|get_config_domain_name }}/images/loader.gif" alt=""></div>
 <div id="centro">
 
     <div id="intera"><input type="text" name="intera" placeholder="Digite e Pressione Enter" maxlength="12"></div>
@@ -22,15 +22,15 @@
 
     <div id="menu">
         <ul id="menu-sort">
-            <li class="desenho"><img src="{{ 'mat_domain'|get_domain_name }}/images/icones/dock/textedit.png" alt=""></li>
-            <li class="diretorio"><img src="{{ 'mat_domain'|get_domain_name }}/images/icones/dock/icon_downloads.png" alt=""></li>
-            <li class="video"><img src="{{ 'mat_domain'|get_domain_name }}/images/icones/dock/icon_imovie.png" alt=""></li>
-            <li class="odontograma"><img src="{{ 'mat_domain'|get_domain_name }}/images/icones/dock/pages.png" alt=""></li>
-            <li class="webclin"><img src="{{ 'mat_domain'|get_domain_name }}/images/icones/dock/icon_textedit.png" alt=""></li>
-            <li class="browser"><img src="{{ 'mat_domain'|get_domain_name }}/images/icones/dock/icon_chrome.png" alt=""></li>
-            <li class="jogo"><img src="{{ 'mat_domain'|get_domain_name }}/images/icones/dock/chess.png" alt=""></li>
-            <li class="admin"><img src="{{ 'mat_domain'|get_domain_name }}/images/icones/dock/xcode.png" alt=""></li>
-            <li class="agenda"><img src="{{ 'mat_domain'|get_domain_name }}/images/icones/dock/wallet.png" alt=""></li>
+            <li class="desenho"><img src="{{ 'mat_domain'|get_config_domain_name }}/images/icones/dock/textedit.png" alt=""></li>
+            <li class="diretorio"><img src="{{ 'mat_domain'|get_config_domain_name }}/images/icones/dock/icon_downloads.png" alt=""></li>
+            <li class="video"><img src="{{ 'mat_domain'|get_config_domain_name }}/images/icones/dock/icon_imovie.png" alt=""></li>
+            <li class="odontograma"><img src="{{ 'mat_domain'|get_config_domain_name }}/images/icones/dock/pages.png" alt=""></li>
+            <li class="webclin"><img src="{{ 'mat_domain'|get_config_domain_name }}/images/icones/dock/icon_textedit.png" alt=""></li>
+            <li class="browser"><img src="{{ 'mat_domain'|get_config_domain_name }}/images/icones/dock/icon_chrome.png" alt=""></li>
+            <li class="jogo"><img src="{{ 'mat_domain'|get_config_domain_name }}/images/icones/dock/chess.png" alt=""></li>
+            <li class="admin"><img src="{{ 'mat_domain'|get_config_domain_name }}/images/icones/dock/xcode.png" alt=""></li>
+            <li class="agenda"><img src="{{ 'mat_domain'|get_config_domain_name }}/images/icones/dock/wallet.png" alt=""></li>
         </ul>
     </div>
 

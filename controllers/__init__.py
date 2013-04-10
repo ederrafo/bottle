@@ -6,6 +6,8 @@ from applications.se import apps_se
 from beaker.middleware import SessionMiddleware
 from bottle import Bottle, HooksPlugin
 from plugin.canvas_plugin import CanvasPlugin
+from plugin.json_plugin import JsonsPlugin
+from plugin.jsonap_plugin import JSONAPIPlugin
 from plugin.template_plugin import TemplatePlugin
 from applications import apps_home
 #from applications.webdesk import apps_webdesk
@@ -40,9 +42,11 @@ def create_app(config=None, modules=None,session = False):
     # 插件安装
     canvas = CanvasPlugin()
     template = TemplatePlugin()
+    jsons = JsonsPlugin()
+    jsonp = JSONAPIPlugin()
 #    hooks = HooksPlugin()
 #    hooks.add('before_request',__)
-    plugins = [canvas,template]#,hooks
+    plugins = [canvas,template,jsons,jsonp]#,hooks
 #    jinja2_template =
     # 添加子模块
     for route in modules:
@@ -79,6 +83,3 @@ class StripPathMiddleware(object):
         e['PATH_INFO'] = e['PATH_INFO'].rstrip('/')
         return self.app(e,h)
 
-
-def __():
-    print 'hook to do'

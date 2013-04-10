@@ -3,7 +3,7 @@ from functools import partial
 import inspect
 import traceback
 from bottle import jinja2_template, HTTPError, BaseTemplate
-from function.templatefilter import get_domain_name, get_domain_url
+from function.templatefilter import get_domain_name, get_domain_url, get_config_domain_url, get_config_domain_name
 from plugin import Plugin
 
 __author__ = 'myth'
@@ -36,13 +36,12 @@ class TemplatePlugin(Plugin):
             return callback
 
         def wrapper(*args, **kwargs):
-
             kwargs[keyword] = self.__()
             try:
                 rv = callback(*args, **kwargs)
             except Exception, e:
-#                print traceback.format_exc(e)
-                raise HTTPError(500, "CanvasPlugin Error", e)
+                print traceback.format_exc(e)
+                raise HTTPError(500, "TemplatePlugin Error", e)
             return rv
         return wrapper
 
@@ -57,7 +56,11 @@ class TemplatePlugin(Plugin):
         #cache_size：
         #           缓存大小，缺省为50，即如果加载超过50个模板，那么则保留最近使用过多50个模板，其它会被删除。
         #           如果换成大小设为0，那么所有模板都会在使用时被重 编译。如果不希望清除缓存，可以将此值设为-1.
-        settings = dict(filters = {"get_domain_name":get_domain_name,"get_domain_url":get_domain_url},cache_size=0)
+        settings = dict(filters = {"get_domain_name":get_domain_name,
+                                   "get_domain_url":get_domain_url,
+                                   "get_config_domain_name":get_config_domain_name,
+                                   "get_config_domain_url":get_config_domain_url},
+                        cache_size=0)
 
         #自动将template_settings作为关键字参数传入jinja2_template中，这样使用时不必每次都加这个参数
         template = partial(jinja2_template,template_settings = settings)

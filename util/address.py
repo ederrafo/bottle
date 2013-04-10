@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-__author__ = 'myth'
+__author__ = 'Administrator'
+
 
 
 import socket
@@ -19,7 +20,5 @@ def get_ip_address(ifname):
 
         # name_ex = socket.gethostbyname_ex(socket.gethostname())
 
-    #get_ip_address('lo')环回地址
-    #get_ip_address('eth0')主机ip地址
-
-
+        #get_ip_address('lo')环回地址
+        #get_ip_address('eth0')主机ip地址

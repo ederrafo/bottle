@@ -1,13 +1,16 @@
 # -*- coding: utf-8 -*-
 import os
-from bottle import run, debug
-from config import IS_SESSION, IS_DEBUG, IS_RELOADER
-
+from bottle import run
+from config import IS_SESSION, IS_RELOADER, IS_DEBUG, HOST, PORT, LOG_CONFIG
 from controllers import create_app
-from function.config import HOST, PORT
+from util import log
+
+__author__ = 'Administrator'
+
+
 
 if __name__ == '__main__':
-
+    log.set_config(**LOG_CONFIG)
     app = create_app(session=IS_SESSION)
     #bottle.TEMPLATE_PATH=['/web2py/applications/myapp/views/demo/']
     # print '%s:%d' % (HOST,PORT)
@@ -15,6 +18,5 @@ if __name__ == '__main__':
 else:
     # Mod WSGI launch
     os.chdir(os.path.dirname(__file__))
+    log.set_config(**LOG_CONFIG)
     application = create_app(session=IS_SESSION)
-
-

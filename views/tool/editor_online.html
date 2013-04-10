@@ -15,14 +15,14 @@
 
     <link href="/favicon.ico" rel="icon" type="image/x-icon">
 
-    <link rel="stylesheet" href="{{ 'mat_domain'|get_domain_name }}/css/editor/styles.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="{{ 'mat_domain'|get_config_domain_name }}/css/editor/styles.css" type="text/css" media="screen" charset="utf-8">
 {#    <script async="true" src="http://use.edgefonts.net/source-code-pro.js"></script>#}
 
 </head>
 <body>
 <div id="optionsPanel" style="position:absolute;height:100%;width:260px">
 <a href="http://ajaxorg.github.com/ace/" >
-    <img id="logo" src="{{ 'mat_domain'|get_domain_name }}/images/lib/ace/logo.png">
+    <img id="logo" src="{{ 'mat_domain'|get_config_domain_name }}/images/lib/ace/logo.png">
 </a>
 <div style="position: absolute; overflow: hidden; top:80px; bottom:0">
 <div style="width: 120%; height:100%; overflow-y: scroll">
@@ -266,10 +266,10 @@
 
 
 
-<script src="{{ 'mat_domain'|get_domain_name }}/js/lib/ace/ace.js" {#data-ace-base="src"#} type="text/javascript" charset="utf-8"></script>
-<script src="{{ 'mat_domain'|get_domain_name }}/js/lib/ace/keybinding-vim.js"></script>
-<script src="{{ 'mat_domain'|get_domain_name }}/js/lib/ace/keybinding-emacs.js"></script>
-<script src="{{ 'mat_domain'|get_domain_name }}/js/lib/ace_editor.js"></script>
+<script src="{{ 'mat_domain'|get_config_domain_name }}/js/lib/ace/ace.js" {#data-ace-base="src"#} type="text/javascript" charset="utf-8"></script>
+<script src="{{ 'mat_domain'|get_config_domain_name }}/js/lib/ace/keybinding-vim.js"></script>
+<script src="{{ 'mat_domain'|get_config_domain_name }}/js/lib/ace/keybinding-emacs.js"></script>
+<script src="{{ 'mat_domain'|get_config_domain_name }}/js/lib/ace_editor.js"></script>
 <script type="text/javascript" charset="utf-8">
     require("kitchen-sink/demo");
 </script>

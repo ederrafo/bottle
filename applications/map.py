@@ -16,6 +16,9 @@ def website_map():
         dict(url="/tool/rest",title="rest"),
         dict(url="/se/category3d",title="category3d"),
         dict(url="/se/typewriter",title="typewriter"),
+        dict(url="/se/imagetransitions",title="imagetransitions"),
+        dict(url="/se/slicebox",title="slicebox"),
+        dict(url="/se/hexaflip",title="hexaflip"),
     ]
 
     return  maps
