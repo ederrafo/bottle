@@ -19,6 +19,7 @@ def website_map():
         dict(url="/se/imagetransitions",title="imagetransitions"),
         dict(url="/se/slicebox",title="slicebox"),
         dict(url="/se/hexaflip",title="hexaflip"),
+        dict(url="/se/gupjct3f",title="gupjct3f"),
     ]
 
     return  maps

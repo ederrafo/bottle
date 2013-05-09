@@ -2,98 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/css/HexaFlip.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/css/ImageTransitions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/NetStringIO.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/ReReadingConfigParser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/css/Slicebox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/calendar/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/_httplib2/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/_decorator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/_jsonlib.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/aggregation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/async.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/bank.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/imagetransitions/bsacustom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/_httplib2/cacerts.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/cache.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/checksumming.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/couch.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/slicebox/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/daemon.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/decorators.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/hexaflip/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/imagetransitions/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/slicebox/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/engine_appengine.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/engine_httplib2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/exceptions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/fmtp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/calendar/formats.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/fs.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/hexaflip/hexaflip.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/hexaflip/hexaflip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/se/hexaflip.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/hujson.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/hujson2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/se/imagetransitions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/_httplib2/iri2uri.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/imagetransitions/jquery.transitions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/json_plugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/jsonap_plugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/log.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/luids.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/markdown2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/modernizr.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/monetary.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/obfuscation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/poster_encode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/postmark.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/printing.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/bin/reindent.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/rest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/robusttypecasts.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/slicebox/slicebox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/se/slicebox.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/_httplib2/socks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/structured.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/hexaflip/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/imagetransitions/style1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/imagetransitions/style2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/imagetransitions/style3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/imagetransitions/style4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/imagetransitions/style5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/imagetransitions/style6.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/calendar/tools.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/http/tools.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/unicode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/calendar/workdays.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/world.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tools/xmltools.py" />
-      <change type="DELETED" beforePath="E:\git\bottle\function\config.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/baidumap/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/css/gupjct3f.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/se/gupjct3f.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/baidumap/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/gupjct3f/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/__init__.py" afterPath="$PROJECT_DIR$/controllers/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/bottle.iml" afterPath="$PROJECT_DIR$/.idea/bottle.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/webdesk/desenho.html" afterPath="$PROJECT_DIR$/views/webdesk/desenho.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/tool/editor_online.html" afterPath="$PROJECT_DIR$/views/tool/editor_online.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/webdesk/index.html" afterPath="$PROJECT_DIR$/views/webdesk/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js" afterPath="$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/map.py" afterPath="$PROJECT_DIR$/applications/map.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/macros/resource_render.html" afterPath="$PROJECT_DIR$/views/macros/resource_render.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin/template_plugin.py" afterPath="$PROJECT_DIR$/plugin/template_plugin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/templatefilter.py" afterPath="$PROJECT_DIR$/function/templatefilter.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\git\bottle\function\address.py" afterPath="$PROJECT_DIR$/util/address.py" />
     </list>
     <ignored path="bottle.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365555754353" ignored="false" />
+    <file path="/Dummy.txt" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368080073134" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/.idea/workspace.xml" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363682972816" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/main.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363748544566" ignored="false" />
     <file path="/a.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363681897797" ignored="false" />
@@ -103,34 +24,34 @@
     <file path="$PROJECT_DIR$/../footprintworld/util/address.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363682486774" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/controllers/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363740766375" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/applications/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363748781333" ignored="false" />
-    <file path="/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364356841520" ignored="false" />
+    <file path="/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366959527946" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/plugin/template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363683171144" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/function/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363683183388" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/function/log.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363685114561" ignored="false" />
     <file path="/log.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363741351164" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/test.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363740218688" ignored="false" />
-    <file path="/test.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364260579483" ignored="false" />
+    <file path="/test.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366767029799" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/mylog.log" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363685663932" ignored="false" />
     <file path="/config.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363740621085" ignored="false" />
-    <file path="/main.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363740866444" ignored="false" />
+    <file path="/main.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366257133077" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/util/log.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363749092966" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/controllers/context.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363741506382" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/function/templatefilter.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363748478829" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/footpritworld.log" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363749130702" ignored="false" />
     <file path="E:/work/python_work/demo/controllers/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364356866576" ignored="false" />
     <file path="E:/work/python_work/demo/templates/index.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363757134247" ignored="false" />
-    <file path="E:/work/python_work/demo/applications/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364351511269" ignored="false" />
+    <file path="E:/work/python_work/demo/applications/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366959527946" ignored="false" />
     <file path="E:/work/python_work/demo/function/templatefilter.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364187827788" ignored="false" />
     <file path="/templatefilter.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364187822314" ignored="false" />
-    <file path="/a.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363756733501" ignored="false" />
-    <file path="/index.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363757130168" ignored="false" />
+    <file path="/a.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366768143964" ignored="false" />
+    <file path="/index.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366768779334" ignored="false" />
     <file path="E:/work/python_work/demo/applications/dhtmlx.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364276155264" ignored="false" />
     <file path="/dhtmlx.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364276155264" ignored="false" />
     <file path="E:/work/python_work/demo/templates/dhtmlx/grid.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364279746622" ignored="false" />
-    <file path="/grid.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364289622767" ignored="false" />
+    <file path="/grid.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365669844316" ignored="false" />
     <file path="E:/work/python_work/demo/templates/macros/resource_render.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364187840157" ignored="false" />
     <file path="E:/work/python_work/demo/plugin/template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364187902661" ignored="false" />
-    <file path="/template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364187900760" ignored="false" />
+    <file path="/template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366762846902" ignored="false" />
     <file path="E:/work/python_work/demo/db/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364190363872" ignored="false" />
     <file path="E:/work/python_work/demo/plugin/xml_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364203405541" ignored="false" />
     <file path="/xml_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364202941597" ignored="false" />
@@ -162,7 +83,7 @@
     <file path="E:/work/python_work/demo/util/tools/daemon.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364263770987" ignored="false" />
     <file path="E:/work/python_work/demo/util/t.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364264545263" ignored="false" />
     <file path="/t.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364264428060" ignored="false" />
-    <file path="/a.dummy" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364276249826" ignored="false" />
+    <file path="/a.dummy" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366252673183" ignored="false" />
     <file path="E:/work/python_work/demo/util/tools/structured.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364268842574" ignored="false" />
     <file path="E:/work/python_work/demo/static/js/dhtmlx/dhtmlxgrid_excell_dhxcalendar.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364272174129" ignored="false" />
     <file path="E:/work/python_work/demo/static/css/dhtmlx/skins/dhtmlxcalendar_dhx_skyblue.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364272530700" ignored="false" />
@@ -173,7 +94,7 @@
     <file path="/dhtmlxgrid_selection.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364276367751" ignored="false" />
     <file path="/dhtmlxgrid.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364279691145" ignored="false" />
     <file path="E:/work/python_work/demo/static/js/dhtmlx/dhtmlxgridcell.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364279734098" ignored="false" />
-    <file path="E:/work/python_work/demo/templates/grid.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364289623376" ignored="false" />
+    <file path="E:/work/python_work/demo/templates/grid.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365670068935" ignored="false" />
     <file path="/ui.jqgrid.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364281230510" ignored="false" />
     <file path="E:/work/python_work/demo/static/css/jqgrid_demo/ui.jqgrid.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364281233824" ignored="false" />
     <file path="E:/work/python_work/demo/applications/json_data.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364358765208" ignored="false" />
@@ -186,15 +107,15 @@
     <file path="E:/work/python_work/demo/templates/jqwidgets/chart.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364359691228" ignored="false" />
     <file path="/chart.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364359665424" ignored="false" />
     <file path="E:/work/python_work/demo/static/css/jqwidgets/jqx.base.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364355914154" ignored="false" />
-    <file path="E:/work/python_work/demo/bottle.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364356529953" ignored="false" />
-    <file path="/bottle.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364356456237" ignored="false" />
+    <file path="E:/work/python_work/demo/bottle.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366256612220" ignored="false" />
+    <file path="/bottle.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366767254133" ignored="false" />
     <file path="E:/work/python_work/demo/plugin/json_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364358230892" ignored="false" />
     <file path="/json_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364358218001" ignored="false" />
     <file path="E:/work/python_work/demo/static/css/jqwidgets/jqx.classic.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364359095514" ignored="false" />
     <file path="E:/work/python_work/demo/static/css/jqwidgets/jqx.black.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364359649484" ignored="false" />
     <file path="/imagetransitions.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365556149238" ignored="false" />
     <file path="/ImageTransitions.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365569065770" ignored="false" />
-    <file path="/map.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365579456311" ignored="false" />
+    <file path="/map.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368080639427" ignored="false" />
     <file path="/default.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365571673814" ignored="false" />
     <file path="/slicebox.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365571480891" ignored="false" />
     <file path="/Slicebox.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365573996143" ignored="false" />
@@ -202,6 +123,55 @@
     <file path="/jquery.slicebox.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365572872269" ignored="false" />
     <file path="/hexaflip.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365579035171" ignored="false" />
     <file path="/HexaFlip.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365579432619" ignored="false" />
+    <file path="E:/work/python_work/demo/templates/demo.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366879698233" ignored="false" />
+    <file path="E:/work/python_work/demo/templates/_demo.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366854162940" ignored="false" />
+    <file path="/_demo.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366854157268" ignored="false" />
+    <file path="/demo.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366877746847" ignored="false" />
+    <file path="E:/work/python_work/demo/static/css/demo/layout.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1367047334943" ignored="false" />
+    <file path="/layout.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366940853378" ignored="false" />
+    <file path="E:/work/python_work/demo/static/js/demo/line.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365658680515" ignored="false" />
+    <file path="/line.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365657063598" ignored="false" />
+    <file path="E:/work/python_work/demo/templates/tree.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365658526968" ignored="false" />
+    <file path="/tree.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365658456105" ignored="false" />
+    <file path="E:/work/python_work/demo/static/js/demo/generatedata.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366957676672" ignored="false" />
+    <file path="/generatedata.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366944969780" ignored="false" />
+    <file path="E:/work/python_work/demo/static/css/demo/pqgrid.dev.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365663325916" ignored="false" />
+    <file path="E:/work/python_work/demo/static/js/jqgrid_demo/jquery.jqGrid.src.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365670819242" ignored="false" />
+    <file path="/jquery.jqGrid.src.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365670319464" ignored="false" />
+    <file path="E:/work/python_work/demo/static/js/demo/default.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1367023638343" ignored="false" />
+    <file path="/default.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1367023638343" ignored="false" />
+    <file path="E:/work/python_work/demo/static/js/jquery.blockUI.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365748694511" ignored="false" />
+    <file path="/jquery.blockUI.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365748601618" ignored="false" />
+    <file path="E:/work/python_work/demo/static/css/bootstrap.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365754138110" ignored="false" />
+    <file path="/bootstrap.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365754138110" ignored="false" />
+    <file path="E:/work/python_work/demo/static/js/demo/column.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365758925187" ignored="false" />
+    <file path="/column.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365758898646" ignored="false" />
+    <file path="E:/work/python_work/demo/static/js/demo/pie.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366340339482" ignored="false" />
+    <file path="/pie.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366340150046" ignored="false" />
+    <file path="E:/work/python_work/demo/main.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366273556934" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366771622734" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/demo/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705638908" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/demo/good.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705865907" ignored="false" />
+    <file path="/good.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705760512" ignored="false" />
+    <file path="E:/work/python_work/frame/config.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705715839" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/icon/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705808370" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/icon/pig.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705874521" ignored="false" />
+    <file path="/pig.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366765681775" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/demo/controllers/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366706024426" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/icon/controllers/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366706034485" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/demo/view/index.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366768779334" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/icon/view/index.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366768381032" ignored="false" />
+    <file path="E:/work/python_work/frame/bottle.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366768756442" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/icon/controllers/pig.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366767265711" ignored="false" />
+    <file path="E:/work/python_work/frame/plugin/template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366767644153" ignored="false" />
+    <file path="E:/work/python_work/frame/test.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366767031627" ignored="false" />
+    <file path="E:/work/python_work/frame/.idea/workspace.xml" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1367114199701" ignored="false" />
+    <file path="E:/work/python_work/demo/static/css/jquery.mCustomScrollbar.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366874261548" ignored="false" />
+    <file path="/jquery.mCustomScrollbar.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366874261548" ignored="false" />
+    <file path="E:/work/python_work/demo/static/css/bootstrap.dropdown.hack.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366961425711" ignored="false" />
+    <file path="E:/work/python_work/demo/static/js/bootstrap.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366970159333" ignored="false" />
+    <file path="/bootstrap.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366970013328" ignored="false" />
+    <file path="/gupjct3f.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368080614603" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,10 +188,64 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="template_plugin.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plugin/template_plugin.py">
+      <file leaf-file-name="jquery.slicebox.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="605" column="0" selection-start="18371" selection-end="18371" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gupjct3f.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/se/gupjct3f.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="22" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/map.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/map.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="47" selection-start="780" selection-end="788" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gupjct3f.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/css/gupjct3f.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="28" selection-start="68" selection-end="68" vertical-scroll-proportion="-0.019880716">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/se/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="189" selection-end="301" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classloader.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/function/classloader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="23" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -245,22 +269,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/static/css/se/imagetransitions/style6.css" />
-        <option value="$PROJECT_DIR$/static/css/se/slicebox/slicebox.css" />
-        <option value="$PROJECT_DIR$/static/css/se/slicebox/custom.css" />
-        <option value="$PROJECT_DIR$/applications/se/imagetransitions.py" />
-        <option value="$PROJECT_DIR$/applications/se/slicebox.py" />
-        <option value="$PROJECT_DIR$/views/css/ImageTransitions.html" />
-        <option value="$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js" />
-        <option value="$PROJECT_DIR$/views/css/Slicebox.html" />
-        <option value="$PROJECT_DIR$/applications/se/hexaflip.py" />
         <option value="$PROJECT_DIR$/static/css/se/hexaflip/hexaflip.css" />
         <option value="$PROJECT_DIR$/static/css/se/hexaflip/style.css" />
         <option value="$PROJECT_DIR$/static/js/se/hexaflip/hexaflip.js" />
         <option value="$PROJECT_DIR$/views/css/HexaFlip.html" />
-        <option value="$PROJECT_DIR$/applications/map.py" />
         <option value="$PROJECT_DIR$/static/css/se/hexaflip/default.css" />
         <option value="$PROJECT_DIR$/static/css/se/slicebox/default.css" />
+        <option value="$PROJECT_DIR$/controllers/__init__.py" />
+        <option value="$PROJECT_DIR$/applications/baidumap/__init__.py" />
+        <option value="$PROJECT_DIR$/views/baidumap/index.html" />
+        <option value="$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js" />
+        <option value="$PROJECT_DIR$/applications/webdesk/index.py" />
+        <option value="$PROJECT_DIR$/views/se/gupjct3f.html" />
+        <option value="$PROJECT_DIR$/views/css/gupjct3f.html" />
+        <option value="$PROJECT_DIR$/applications/se/gupjct3f.py" />
+        <option value="$PROJECT_DIR$/applications/map.py" />
+        <option value="$PROJECT_DIR$/static/css/se/gupjct3f/style.css" />
       </list>
     </option>
   </component>
@@ -296,7 +320,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,61 +366,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webdesk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="se" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="macros" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,99 +398,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="se" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="se" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slicebox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="se" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hexaflip" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -557,7 +434,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -578,22 +455,16 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="se" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="gupjct3f" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -612,10 +483,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -663,7 +530,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="imagetransitions" />
+              <option name="myItemId" value="gupjct3f" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -689,49 +556,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hexaflip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="function" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="category3d" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -749,8 +574,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="applications" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -778,6 +622,9 @@
       <recent name="E:\git\bottle\util" />
       <recent name="E:\git\bottle\util\tools" />
       <recent name="E:\git\bottle\plugin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\git\bottle\views\css" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -1002,17 +849,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1394" height="916" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.082119204" sideWeight="0.49806094" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19682959" sideWeight="0.49806094" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.076757535" sideWeight="0.6928879" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2575075" sideWeight="0.8476821" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27477476" sideWeight="0.74768823" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4525862" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30711207" sideWeight="0.5024931" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15231788" sideWeight="0.4936288" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25231177" sideWeight="0.4936288" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1085,120 +932,118 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/se/modernizr.custom.js">
+    <entry file="file://$PROJECT_DIR$/function/templatefilter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/se/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="189" selection-end="301" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/css/ImageTransitions.html">
+    <entry file="file://$PROJECT_DIR$/function/classloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="46" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.49642006">
+        <state line="11" column="23" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="528" column="43" selection-start="16364" selection-end="16364" vertical-scroll-proportion="-13.96">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/css/Slicebox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="44" selection-start="1593" selection-end="1593" vertical-scroll-proportion="-23.36111">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/slicebox/slicebox.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="24" selection-start="1916" selection-end="1931" vertical-scroll-proportion="-13.44">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/se/slicebox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="50" selection-start="72" selection-end="181" vertical-scroll-proportion="0.28846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/hexaflip/hexaflip.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="21" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.39461884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/hexaflip/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="1" selection-start="2789" selection-end="2789" vertical-scroll-proportion="1.0605382">
+        <state line="605" column="0" selection-start="18371" selection-end="18371" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/applications/se/hexaflip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="163" selection-end="171" vertical-scroll-proportion="0.28846154">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applications/map.py">
+    <entry file="file://$PROJECT_DIR$/applications/se/category3d.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="47" selection-start="737" selection-end="737" vertical-scroll-proportion="0.6035889">
+        <state line="11" column="51" selection-start="328" selection-end="328" vertical-scroll-proportion="0.5744681">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/se/hexaflip/hexaflip.js">
+    <entry file="file://$PROJECT_DIR$/applications/se/imagetransitions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="0.37565216">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/slicebox/custom.css">
+    <entry file="file://$PROJECT_DIR$/applications/se/slicebox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="55" selection-start="1825" selection-end="1832" vertical-scroll-proportion="0.07504078">
+        <state line="5" column="43" selection-start="174" selection-end="174" vertical-scroll-proportion="0.2504638">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/hexaflip/default.css">
+    <entry file="file://$PROJECT_DIR$/applications/se/typewriter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="135" selection-end="135" vertical-scroll-proportion="0.26427406">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/slicebox/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="546" selection-end="546" vertical-scroll-proportion="0.90538335">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/css/HexaFlip.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="52" selection-start="373" selection-end="373" vertical-scroll-proportion="-1.3525046">
+        <state line="13" column="48" selection-start="685" selection-end="685" vertical-scroll-proportion="0.71632653">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/template_plugin.py">
+    <entry file="file://$PROJECT_DIR$/views/map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="47" selection-start="780" selection-end="788" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/se/gupjct3f.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/se/category3d/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="1" selection-start="36" selection-end="36" vertical-scroll-proportion="0.1691023">
+          <folding>
+            <element signature="e#151#290#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/se/gupjct3f/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="275" column="48" selection-start="10551" selection-end="10551" vertical-scroll-proportion="0.42070484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/css/gupjct3f.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="28" selection-start="68" selection-end="68" vertical-scroll-proportion="-0.019880716">
           <folding />
         </state>
       </provider>

@@ -2,6 +2,7 @@
 
 #import bottle
 from applications.api.editor import api_tool
+from applications.baidumap import apps_baidumap
 from applications.se import apps_se
 from beaker.middleware import SessionMiddleware
 from bottle import Bottle, HooksPlugin
@@ -22,6 +23,7 @@ DEFAULT_MODULES = (
                     (apps_tool,"/tool"),
                     (apps_se,"/se"),
                     (api_tool,"/api"),
+                    (apps_baidumap,"/baidu/map"),
                     (apps_home,"/"),
                 )
 

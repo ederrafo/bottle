@@ -523,10 +523,7 @@
                 this.cuboids.push( cuboid );
 
             }
-            jQuery.fn.outerHTML = function() {
-                return $('<div>').append( this.eq(0).clone() ).html();
-            };
-            console.log(this.$box.outerHTML());
+
         },
         _rotate : function() {
 
