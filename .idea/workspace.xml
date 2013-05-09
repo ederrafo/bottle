@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/baidumap/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/css/gupjct3f.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/se/gupjct3f.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/baidumap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/gupjct3f/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/__init__.py" afterPath="$PROJECT_DIR$/controllers/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js" afterPath="$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/tear/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/tear/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/se/tear.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/se/tear.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/css/gupjct3f.html" afterPath="$PROJECT_DIR$/views/css/gupjct3f.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/map.py" afterPath="$PROJECT_DIR$/applications/map.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -115,7 +113,7 @@
     <file path="E:/work/python_work/demo/static/css/jqwidgets/jqx.black.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364359649484" ignored="false" />
     <file path="/imagetransitions.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365556149238" ignored="false" />
     <file path="/ImageTransitions.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365569065770" ignored="false" />
-    <file path="/map.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368080639427" ignored="false" />
+    <file path="/map.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368082153695" ignored="false" />
     <file path="/default.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365571673814" ignored="false" />
     <file path="/slicebox.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365571480891" ignored="false" />
     <file path="/Slicebox.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365573996143" ignored="false" />
@@ -172,6 +170,10 @@
     <file path="E:/work/python_work/demo/static/js/bootstrap.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366970159333" ignored="false" />
     <file path="/bootstrap.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366970013328" ignored="false" />
     <file path="/gupjct3f.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368080614603" ignored="false" />
+    <file path="/tear.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368081830187" ignored="false" />
+    <file path="/tear.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368081857419" ignored="false" />
+    <file path="/gupjct3f.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368082017986" ignored="false" />
+    <file path="/tear.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368082139676" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,15 +199,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gupjct3f.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/se/gupjct3f.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/map.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -218,17 +211,46 @@
       <file leaf-file-name="map.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applications/map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="47" selection-start="780" selection-end="788" vertical-scroll-proportion="0.0">
+            <state line="22" column="39" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gupjct3f.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/css/gupjct3f.html">
+      <file leaf-file-name="tear.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/se/tear.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="28" selection-start="68" selection-end="68" vertical-scroll-proportion="-0.019880716">
+            <state line="5" column="21" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tear.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/se/tear.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="8" selection-start="715" selection-end="715" vertical-scroll-proportion="0.51785713">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageTransitions.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/css/ImageTransitions.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="77" selection-start="1088" selection-end="1161" vertical-scroll-proportion="-9.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/se/tear/default.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="281" column="1" selection-start="6828" selection-end="6828" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -262,6 +284,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -269,11 +292,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/static/css/se/hexaflip/hexaflip.css" />
-        <option value="$PROJECT_DIR$/static/css/se/hexaflip/style.css" />
-        <option value="$PROJECT_DIR$/static/js/se/hexaflip/hexaflip.js" />
-        <option value="$PROJECT_DIR$/views/css/HexaFlip.html" />
-        <option value="$PROJECT_DIR$/static/css/se/hexaflip/default.css" />
         <option value="$PROJECT_DIR$/static/css/se/slicebox/default.css" />
         <option value="$PROJECT_DIR$/controllers/__init__.py" />
         <option value="$PROJECT_DIR$/applications/baidumap/__init__.py" />
@@ -281,10 +299,15 @@
         <option value="$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js" />
         <option value="$PROJECT_DIR$/applications/webdesk/index.py" />
         <option value="$PROJECT_DIR$/views/se/gupjct3f.html" />
-        <option value="$PROJECT_DIR$/views/css/gupjct3f.html" />
         <option value="$PROJECT_DIR$/applications/se/gupjct3f.py" />
-        <option value="$PROJECT_DIR$/applications/map.py" />
         <option value="$PROJECT_DIR$/static/css/se/gupjct3f/style.css" />
+        <option value="$PROJECT_DIR$/applications/se/tear.py" />
+        <option value="$PROJECT_DIR$/views/se/tear.js" />
+        <option value="$PROJECT_DIR$/static/css/se/tear/style.css" />
+        <option value="$PROJECT_DIR$/views/css/gupjct3f.html" />
+        <option value="$PROJECT_DIR$/static/js/se/tear/default.js" />
+        <option value="$PROJECT_DIR$/applications/map.py" />
+        <option value="$PROJECT_DIR$/views/se/tear.html" />
       </list>
     </option>
   </component>
@@ -401,22 +424,8 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -434,7 +443,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -456,7 +465,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -464,7 +473,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gupjct3f" />
+              <option name="myItemId" value="typewriter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -482,7 +491,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tear" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -497,66 +514,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="se" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="se" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gupjct3f" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="se" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="category3d" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -936,60 +893,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/function/templatefilter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/se/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="189" selection-end="301" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/classloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="605" column="0" selection-start="18371" selection-end="18371" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/se/hexaflip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/se/category3d.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="328" selection-end="328" vertical-scroll-proportion="0.5744681">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/se/imagetransitions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/se/slicebox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="43" selection-start="174" selection-end="174" vertical-scroll-proportion="0.2504638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/applications/se/typewriter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -997,30 +900,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/css/HexaFlip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="48" selection-start="685" selection-end="685" vertical-scroll-proportion="0.71632653">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="47" selection-start="780" selection-end="788" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/se/gupjct3f.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1041,9 +923,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/applications/se/gupjct3f.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="50" selection-start="165" selection-end="165" vertical-scroll-proportion="0.3253012">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="605" column="0" selection-start="18371" selection-end="18371" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/se/tear/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="0" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.4686941">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/se/tear/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="281" column="1" selection-start="6828" selection-end="6828" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/se/typewriter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/se/category3d.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/css/HexaFlip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="48" selection-start="685" selection-end="685" vertical-scroll-proportion="0.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/css/ImageTransitions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="77" selection-start="1088" selection-end="1161" vertical-scroll-proportion="-9.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/css/gupjct3f.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="68" selection-end="68" vertical-scroll-proportion="-0.019880716">
+        <state line="8" column="10" selection-start="303" selection-end="303" vertical-scroll-proportion="0.44906446">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="39" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/se/tear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/se/tear.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="8" selection-start="715" selection-end="715" vertical-scroll-proportion="0.51785713">
           <folding />
         </state>
       </provider>
