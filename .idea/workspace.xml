@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/tear/default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/tear/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/se/tear.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/se/tear.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/css/gupjct3f.html" afterPath="$PROJECT_DIR$/views/css/gupjct3f.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/gradient/colorpicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/gradient/colorpicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/gradient/dom-drag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/gradient/gradX.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/css/gradient.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/se/gradient.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/gradient/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/map.py" afterPath="$PROJECT_DIR$/applications/map.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bottle.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368080073134" ignored="false" />
+    <file path="/Dummy.txt" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372387685050" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/.idea/workspace.xml" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363682972816" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/main.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363748544566" ignored="false" />
     <file path="/a.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363681897797" ignored="false" />
@@ -22,16 +24,16 @@
     <file path="$PROJECT_DIR$/../footprintworld/util/address.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363682486774" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/controllers/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363740766375" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/applications/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363748781333" ignored="false" />
-    <file path="/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366959527946" ignored="false" />
+    <file path="/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368427827722" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/plugin/template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363683171144" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/function/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363683183388" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/function/log.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363685114561" ignored="false" />
     <file path="/log.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363741351164" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/test.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363740218688" ignored="false" />
-    <file path="/test.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366767029799" ignored="false" />
+    <file path="/test.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368166801623" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/mylog.log" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363685663932" ignored="false" />
-    <file path="/config.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363740621085" ignored="false" />
-    <file path="/main.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366257133077" ignored="false" />
+    <file path="/config.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368425558725" ignored="false" />
+    <file path="/main.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368426529040" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/util/log.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363749092966" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/controllers/context.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363741506382" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/function/templatefilter.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363748478829" ignored="false" />
@@ -40,16 +42,16 @@
     <file path="E:/work/python_work/demo/templates/index.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363757134247" ignored="false" />
     <file path="E:/work/python_work/demo/applications/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366959527946" ignored="false" />
     <file path="E:/work/python_work/demo/function/templatefilter.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364187827788" ignored="false" />
-    <file path="/templatefilter.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364187822314" ignored="false" />
+    <file path="/templatefilter.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368157892720" ignored="false" />
     <file path="/a.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366768143964" ignored="false" />
-    <file path="/index.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366768779334" ignored="false" />
+    <file path="/index.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368155587765" ignored="false" />
     <file path="E:/work/python_work/demo/applications/dhtmlx.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364276155264" ignored="false" />
     <file path="/dhtmlx.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364276155264" ignored="false" />
     <file path="E:/work/python_work/demo/templates/dhtmlx/grid.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364279746622" ignored="false" />
     <file path="/grid.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365669844316" ignored="false" />
     <file path="E:/work/python_work/demo/templates/macros/resource_render.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364187840157" ignored="false" />
     <file path="E:/work/python_work/demo/plugin/template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364187902661" ignored="false" />
-    <file path="/template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366762846902" ignored="false" />
+    <file path="/template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368420010160" ignored="false" />
     <file path="E:/work/python_work/demo/db/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364190363872" ignored="false" />
     <file path="E:/work/python_work/demo/plugin/xml_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364203405541" ignored="false" />
     <file path="/xml_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364202941597" ignored="false" />
@@ -81,7 +83,7 @@
     <file path="E:/work/python_work/demo/util/tools/daemon.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364263770987" ignored="false" />
     <file path="E:/work/python_work/demo/util/t.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364264545263" ignored="false" />
     <file path="/t.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364264428060" ignored="false" />
-    <file path="/a.dummy" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366252673183" ignored="false" />
+    <file path="/a.dummy" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368157799812" ignored="false" />
     <file path="E:/work/python_work/demo/util/tools/structured.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364268842574" ignored="false" />
     <file path="E:/work/python_work/demo/static/js/dhtmlx/dhtmlxgrid_excell_dhxcalendar.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364272174129" ignored="false" />
     <file path="E:/work/python_work/demo/static/css/dhtmlx/skins/dhtmlxcalendar_dhx_skyblue.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364272530700" ignored="false" />
@@ -106,14 +108,14 @@
     <file path="/chart.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364359665424" ignored="false" />
     <file path="E:/work/python_work/demo/static/css/jqwidgets/jqx.base.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364355914154" ignored="false" />
     <file path="E:/work/python_work/demo/bottle.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366256612220" ignored="false" />
-    <file path="/bottle.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366767254133" ignored="false" />
+    <file path="/bottle.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368416680450" ignored="false" />
     <file path="E:/work/python_work/demo/plugin/json_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364358230892" ignored="false" />
     <file path="/json_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364358218001" ignored="false" />
     <file path="E:/work/python_work/demo/static/css/jqwidgets/jqx.classic.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364359095514" ignored="false" />
     <file path="E:/work/python_work/demo/static/css/jqwidgets/jqx.black.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364359649484" ignored="false" />
     <file path="/imagetransitions.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365556149238" ignored="false" />
     <file path="/ImageTransitions.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365569065770" ignored="false" />
-    <file path="/map.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368082153695" ignored="false" />
+    <file path="/map.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372388263698" ignored="false" />
     <file path="/default.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365571673814" ignored="false" />
     <file path="/slicebox.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365571480891" ignored="false" />
     <file path="/Slicebox.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365573996143" ignored="false" />
@@ -147,21 +149,21 @@
     <file path="E:/work/python_work/demo/static/js/demo/pie.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366340339482" ignored="false" />
     <file path="/pie.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366340150046" ignored="false" />
     <file path="E:/work/python_work/demo/main.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366273556934" ignored="false" />
-    <file path="E:/work/python_work/frame/applications/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366771622734" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368425156554" ignored="false" />
     <file path="E:/work/python_work/frame/applications/demo/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705638908" ignored="false" />
     <file path="E:/work/python_work/frame/applications/demo/good.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705865907" ignored="false" />
     <file path="/good.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705760512" ignored="false" />
     <file path="E:/work/python_work/frame/config.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705715839" ignored="false" />
     <file path="E:/work/python_work/frame/applications/icon/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705808370" ignored="false" />
     <file path="E:/work/python_work/frame/applications/icon/pig.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366705874521" ignored="false" />
-    <file path="/pig.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366765681775" ignored="false" />
+    <file path="/pig.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368414732341" ignored="false" />
     <file path="E:/work/python_work/frame/applications/demo/controllers/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366706024426" ignored="false" />
     <file path="E:/work/python_work/frame/applications/icon/controllers/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366706034485" ignored="false" />
     <file path="E:/work/python_work/frame/applications/demo/view/index.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366768779334" ignored="false" />
     <file path="E:/work/python_work/frame/applications/icon/view/index.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366768381032" ignored="false" />
-    <file path="E:/work/python_work/frame/bottle.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366768756442" ignored="false" />
+    <file path="E:/work/python_work/frame/bottle.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368416874546" ignored="false" />
     <file path="E:/work/python_work/frame/applications/icon/controllers/pig.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366767265711" ignored="false" />
-    <file path="E:/work/python_work/frame/plugin/template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366767644153" ignored="false" />
+    <file path="E:/work/python_work/frame/plugin/template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368420074009" ignored="false" />
     <file path="E:/work/python_work/frame/test.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366767031627" ignored="false" />
     <file path="E:/work/python_work/frame/.idea/workspace.xml" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1367114199701" ignored="false" />
     <file path="E:/work/python_work/demo/static/css/jquery.mCustomScrollbar.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1366874261548" ignored="false" />
@@ -174,6 +176,52 @@
     <file path="/tear.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368081857419" ignored="false" />
     <file path="/gupjct3f.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368082017986" ignored="false" />
     <file path="/tear.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368082139676" ignored="false" />
+    <file path="E:/work/python_work/frame/util/filetool.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368155096477" ignored="false" />
+    <file path="/filetool.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368155057584" ignored="false" />
+    <file path="E:/work/python_work/frame/module/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368165757094" ignored="false" />
+    <file path="E:/work/python_work/frame/module/config.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368435031705" ignored="false" />
+    <file path="E:/work/python_work/frame/controllers/url.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368165802228" ignored="false" />
+    <file path="E:/work/python_work/frame/controllers/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368427599356" ignored="false" />
+    <file path="/url.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368146242307" ignored="false" />
+    <file path="E:/work/python_work/frame/templates/config/index.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368155597904" ignored="false" />
+    <file path="E:/work/python_work/frame/util/classloader.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368152740622" ignored="false" />
+    <file path="/classloader.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368152740622" ignored="false" />
+    <file path="E:/work/python_work/frame/main.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368426530212" ignored="false" />
+    <file path="E:/work/python_work/frame/test/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368153885536" ignored="false" />
+    <file path="E:/work/python_work/frame/test/test.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368166811780" ignored="false" />
+    <file path="E:/work/python_work/frame/templates/config/install.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368171264865" ignored="false" />
+    <file path="E:/work/python_work/frame/templates/macros/resource_render.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368165654860" ignored="false" />
+    <file path="E:/work/python_work/frame/function/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368157520121" ignored="false" />
+    <file path="E:/work/python_work/frame/function/templatefilter.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368157902483" ignored="false" />
+    <file path="/install.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368171254901" ignored="false" />
+    <file path="E:/work/python_work/frame/static/css/config/schedule.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368165343777" ignored="false" />
+    <file path="E:/work/python_work/frame/static/js/config/schedule.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368179114803" ignored="false" />
+    <file path="E:/work/python_work/frame/controllers/context.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368167090123" ignored="false" />
+    <file path="/context.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368167089060" ignored="false" />
+    <file path="E:/work/python_work/frame/plugin/canvas_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368167220251" ignored="false" />
+    <file path="/canvas_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368167219367" ignored="false" />
+    <file path="E:/work/python_work/frame/templates/layout.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368167257343" ignored="false" />
+    <file path="/layout.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368167257343" ignored="false" />
+    <file path="/schedule.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368175897835" ignored="false" />
+    <file path="E:/work/python_work/frame/static/css/config/schedule.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368179117973" ignored="false" />
+    <file path="/schedule.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368178623059" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/test/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368415782387" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/test/controllers/pig.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368414736949" ignored="false" />
+    <file path="E:/work/python_work/frame/plugin/app_template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368434911002" ignored="false" />
+    <file path="/app_template_plugin.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368427115697" ignored="false" />
+    <file path="E:/work/python_work/frame/controllers/route.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368434859509" ignored="false" />
+    <file path="/route.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368434749304" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/apps.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368422767881" ignored="false" />
+    <file path="/apps.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368427416535" ignored="false" />
+    <file path="E:/work/python_work/frame/applications/apps.conf" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368422786805" ignored="false" />
+    <file path="E:/work/python_work/frame/apps.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368427423818" ignored="false" />
+    <file path="E:/work/python_work/frame/apps.conf" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368435084380" ignored="false" />
+    <file path="E:/work/python_work/frame/plugin/__init__.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1368434937523" ignored="false" />
+    <file path="/gradient.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372387830684" ignored="false" />
+    <file path="/gradient.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372388353773" ignored="false" />
+    <file path="$PROJECT_DIR$/../frame/config.conf" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372388280293" ignored="false" />
+    <file path="/gradX.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372388403305" ignored="false" />
+    <file path="/style.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372388797459" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,19 +238,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jquery.slicebox.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js">
+      <file leaf-file-name="gradient.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/se/gradient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="605" column="0" selection-start="18371" selection-end="18371" vertical-scroll-proportion="0.0">
+            <state line="11" column="31" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/map.html">
+      <file leaf-file-name="gradient.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/css/gradient.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="17" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="0.7091932">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/se/gradient/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="204" column="46" selection-start="4844" selection-end="4844" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -211,63 +268,34 @@
       <file leaf-file-name="map.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applications/map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="39" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+            <state line="23" column="47" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tear.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/se/tear.py">
+      <file leaf-file-name="resource_render.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/macros/resource_render.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="21" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+            <state line="12" column="62" selection-start="676" selection-end="714" vertical-scroll-proportion="-9.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tear.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/se/tear.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="8" selection-start="715" selection-end="715" vertical-scroll-proportion="0.51785713">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageTransitions.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/css/ImageTransitions.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="77" selection-start="1088" selection-end="1161" vertical-scroll-proportion="-9.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/se/tear/default.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="281" column="1" selection-start="6828" selection-end="6828" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/se/__init__.py">
+        <entry file="file://$PROJECT_DIR$/applications/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="189" selection-end="301" vertical-scroll-proportion="0.0">
+            <state line="112" column="39" selection-start="3464" selection-end="3464" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classloader.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/function/classloader.py">
+      <file leaf-file-name="editor.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/api/editor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="23" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -292,13 +320,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/static/css/se/slicebox/default.css" />
-        <option value="$PROJECT_DIR$/controllers/__init__.py" />
-        <option value="$PROJECT_DIR$/applications/baidumap/__init__.py" />
-        <option value="$PROJECT_DIR$/views/baidumap/index.html" />
-        <option value="$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js" />
-        <option value="$PROJECT_DIR$/applications/webdesk/index.py" />
-        <option value="$PROJECT_DIR$/views/se/gupjct3f.html" />
         <option value="$PROJECT_DIR$/applications/se/gupjct3f.py" />
         <option value="$PROJECT_DIR$/static/css/se/gupjct3f/style.css" />
         <option value="$PROJECT_DIR$/applications/se/tear.py" />
@@ -306,16 +327,21 @@
         <option value="$PROJECT_DIR$/static/css/se/tear/style.css" />
         <option value="$PROJECT_DIR$/views/css/gupjct3f.html" />
         <option value="$PROJECT_DIR$/static/js/se/tear/default.js" />
-        <option value="$PROJECT_DIR$/applications/map.py" />
         <option value="$PROJECT_DIR$/views/se/tear.html" />
+        <option value="$PROJECT_DIR$/applications/se/gradient.py" />
+        <option value="$PROJECT_DIR$/static/js/se/gradient/colorpicker.js" />
+        <option value="$PROJECT_DIR$/applications/map.py" />
+        <option value="$PROJECT_DIR$/static/js/se/gradient/gradX.js" />
+        <option value="$PROJECT_DIR$/static/js/se/gradient/dom-drag.js" />
+        <option value="$PROJECT_DIR$/static/css/se/gradient/colorpicker.css" />
+        <option value="$PROJECT_DIR$/static/css/se/gradient/style.css" />
+        <option value="$PROJECT_DIR$/views/css/gradient.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1394" />
-    <option name="height" value="916" />
+    <option name="width" value="1378" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -407,6 +433,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="macros" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -473,7 +517,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="typewriter" />
+              <option name="myItemId" value="gradient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,7 +535,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -499,7 +583,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tear" />
+              <option name="myItemId" value="imagetransitions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -514,6 +598,124 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imagetransitions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gupjct3f" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gradient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -805,18 +1007,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1394" height="916" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1378" height="900" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19682959" sideWeight="0.49806094" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19568151" sideWeight="0.49806094" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.076757535" sideWeight="0.6928879" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27477476" sideWeight="0.74768823" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22948328" sideWeight="0.8043185" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4525862" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30711207" sideWeight="0.5024931" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25231177" sideWeight="0.4936288" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25236169" sideWeight="0.4936288" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -893,118 +1095,122 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/applications/se/typewriter.py">
+    <entry file="file://$PROJECT_DIR$/views/macros/resource_render.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="12" column="62" selection-start="676" selection-end="714" vertical-scroll-proportion="-9.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/map.html">
+    <entry file="file://$PROJECT_DIR$/applications/se/gradient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="11" column="31" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/category3d/style.css">
+    <entry file="file://$PROJECT_DIR$/static/js/se/gradient/colorpicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="1" selection-start="36" selection-end="36" vertical-scroll-proportion="0.1691023">
-          <folding>
-            <element signature="e#151#290#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/gupjct3f/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="48" selection-start="10551" selection-end="10551" vertical-scroll-proportion="0.42070484">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/se/gupjct3f.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="165" selection-end="165" vertical-scroll-proportion="0.3253012">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/se/slicebox/jquery.slicebox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="605" column="0" selection-start="18371" selection-end="18371" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/tear/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.4686941">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/se/tear/default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="1" selection-start="6828" selection-end="6828" vertical-scroll-proportion="0.0">
+        <state line="6" column="23" selection-start="207" selection-end="207" vertical-scroll-proportion="0.23858616">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/se/typewriter.html">
+    <entry file="file://$PROJECT_DIR$/applications/map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="47" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/json_plugin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/se/category3d.html">
+    <entry file="file://$PROJECT_DIR$/applications/se/hexaflip.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/css/HexaFlip.html">
+    <entry file="file://$PROJECT_DIR$/static/js/se/gradient/gradX.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="48" selection-start="685" selection-end="685" vertical-scroll-proportion="0.75">
+        <state line="735" column="32" selection-start="25416" selection-end="25419" vertical-scroll-proportion="0.33190578">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/css/ImageTransitions.html">
+    <entry file="file://$PROJECT_DIR$/static/js/se/gradient/dom-drag.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="77" selection-start="1088" selection-end="1161" vertical-scroll-proportion="-9.0">
+        <state line="140" column="39" selection-start="4910" selection-end="4910" vertical-scroll-proportion="1.5346534">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/se/gradient/colorpicker.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="480" column="1" selection-start="12690" selection-end="12690" vertical-scroll-proportion="0.9166667">
+          <folding>
+            <element signature="e#11283#11422#2" expanded="true" />
+            <element signature="e#11745#12076#2" expanded="true" />
+            <element signature="e#12200#12687#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/se/gupjct3f.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="50" selection-start="71" selection-end="165" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/css/gupjct3f.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="10" selection-start="303" selection-end="303" vertical-scroll-proportion="0.44906446">
+        <state line="12" column="0" selection-start="0" selection-end="1068" vertical-scroll-proportion="-9.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applications/map.py">
+    <entry file="file://$PROJECT_DIR$/static/css/se/imagetransitions/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="39" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+        <state line="49" column="39" selection-start="1350" selection-end="1361" vertical-scroll-proportion="-3.7317073">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applications/se/tear.py">
+    <entry file="file://$PROJECT_DIR$/static/css/se/imagetransitions/style1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.5227723">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/se/tear.html">
+    <entry file="file://$PROJECT_DIR$/static/css/se/gupjct3f/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="715" selection-end="715" vertical-scroll-proportion="0.51785713">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-14.981708">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/se/gradient/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="46" selection-start="4844" selection-end="4844" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/css/gradient.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="0.7091932">
           <folding />
         </state>
       </provider>
