@@ -22,6 +22,7 @@ def website_map():
         dict(url="/se/gupjct3f",title="gupjct3f"),
         dict(url="/se/tear",title="tear"),
         dict(url="/se/gradient",title="gradient"),
+        dict(url="/se/hovernavigation",title="hovernavigation"),
     ]
 
     return  maps

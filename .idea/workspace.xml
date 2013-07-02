@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/gradient/colorpicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/gradient/colorpicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/gradient/dom-drag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/gradient/gradX.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/css/gradient.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/se/gradient.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/gradient/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/se/hovernavigation/ecoicon.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/hovernavigation/component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/se/hovernavigation/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/se/hovernavigation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applications/se/hovernavigation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/se/hovernavigation/modernizr.custom.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/map.py" afterPath="$PROJECT_DIR$/applications/map.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bottle.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372387685050" ignored="false" />
+    <file path="/Dummy.txt" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372725908879" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/.idea/workspace.xml" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363682972816" ignored="false" />
     <file path="$PROJECT_DIR$/../footprintworld/main.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363748544566" ignored="false" />
     <file path="/a.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1363681897797" ignored="false" />
@@ -115,7 +114,7 @@
     <file path="E:/work/python_work/demo/static/css/jqwidgets/jqx.black.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1364359649484" ignored="false" />
     <file path="/imagetransitions.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365556149238" ignored="false" />
     <file path="/ImageTransitions.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365569065770" ignored="false" />
-    <file path="/map.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372388263698" ignored="false" />
+    <file path="/map.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372726650000" ignored="false" />
     <file path="/default.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365571673814" ignored="false" />
     <file path="/slicebox.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365571480891" ignored="false" />
     <file path="/Slicebox.html" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1365573996143" ignored="false" />
@@ -222,6 +221,8 @@
     <file path="$PROJECT_DIR$/../frame/config.conf" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372388280293" ignored="false" />
     <file path="/gradX.js" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372388403305" ignored="false" />
     <file path="/style.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372388797459" ignored="false" />
+    <file path="/hovernavigation.py" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372725997570" ignored="false" />
+    <file path="/component.css" changelist="4c9eb8c1-fff6-4e73-ac05-4e8eb3de4bc5" time="1372726860537" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,19 +239,57 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gradient.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/se/gradient.py">
+      <file leaf-file-name="gradient.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/css/gradient.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="31" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
+            <state line="12" column="33" selection-start="580" selection-end="580" vertical-scroll-proportion="-9.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gradient.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/css/gradient.html">
+      <file leaf-file-name="hovernavigation.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/se/hovernavigation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="0.7091932">
+            <state line="9" column="46" selection-start="250" selection-end="265" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hovernavigation.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/se/hovernavigation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="159" column="55" selection-start="8473" selection-end="8484" vertical-scroll-proportion="-3.0983605">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="component.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/se/hovernavigation/component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="23" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.30117646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/se/hovernavigation/default.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="39" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category3d.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/se/category3d.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="51" selection-start="65" selection-end="328" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -268,16 +307,7 @@
       <file leaf-file-name="map.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applications/map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="47" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resource_render.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/macros/resource_render.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="62" selection-start="676" selection-end="714" vertical-scroll-proportion="-9.0">
+            <state line="8" column="43" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -320,22 +350,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/applications/se/gupjct3f.py" />
-        <option value="$PROJECT_DIR$/static/css/se/gupjct3f/style.css" />
-        <option value="$PROJECT_DIR$/applications/se/tear.py" />
-        <option value="$PROJECT_DIR$/views/se/tear.js" />
-        <option value="$PROJECT_DIR$/static/css/se/tear/style.css" />
         <option value="$PROJECT_DIR$/views/css/gupjct3f.html" />
         <option value="$PROJECT_DIR$/static/js/se/tear/default.js" />
         <option value="$PROJECT_DIR$/views/se/tear.html" />
         <option value="$PROJECT_DIR$/applications/se/gradient.py" />
         <option value="$PROJECT_DIR$/static/js/se/gradient/colorpicker.js" />
-        <option value="$PROJECT_DIR$/applications/map.py" />
         <option value="$PROJECT_DIR$/static/js/se/gradient/gradX.js" />
         <option value="$PROJECT_DIR$/static/js/se/gradient/dom-drag.js" />
         <option value="$PROJECT_DIR$/static/css/se/gradient/colorpicker.css" />
         <option value="$PROJECT_DIR$/static/css/se/gradient/style.css" />
         <option value="$PROJECT_DIR$/views/css/gradient.html" />
+        <option value="$PROJECT_DIR$/static/js/se/hovernavigation/modernizr.custom.js" />
+        <option value="$PROJECT_DIR$/views/se/hovernavigation.html" />
+        <option value="$PROJECT_DIR$/applications/se/hovernavigation.py" />
+        <option value="$PROJECT_DIR$/applications/map.py" />
+        <option value="$PROJECT_DIR$/static/css/se/hovernavigation/default.css" />
+        <option value="$PROJECT_DIR$/static/css/se/hovernavigation/component.css" />
       </list>
     </option>
   </component>
@@ -447,24 +477,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -517,7 +529,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gradient" />
+              <option name="myItemId" value="hovernavigation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,7 +587,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bottle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -583,7 +617,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="imagetransitions" />
+              <option name="myItemId" value="hovernavigation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -663,59 +697,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="imagetransitions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="se" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gupjct3f" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bottle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="se" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gradient" />
+              <option name="myItemId" value="hovernavigation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -777,6 +759,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\bottle\static\fonts\se\hovernavigation" />
       <recent name="E:\git\bottle\static\js\se" />
       <recent name="E:\git\bottle\util" />
       <recent name="E:\git\bottle\util\tools" />
@@ -1008,17 +991,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1378" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19568151" sideWeight="0.49806094" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38866398" sideWeight="0.49806094" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.076757535" sideWeight="0.6928879" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22948328" sideWeight="0.8043185" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26291794" sideWeight="0.69095814" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4525862" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30711207" sideWeight="0.5024931" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25236169" sideWeight="0.4936288" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30904183" sideWeight="0.4936288" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1095,9 +1078,57 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/images/login/foliage-large.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/login/bonsai.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/icones/dock/bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/icones/janela/view_multicolumn.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/css/gradient.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="33" selection-start="580" selection-end="580" vertical-scroll-proportion="-9.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/se/category3d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="51" selection-start="65" selection-end="328" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/macros/resource_render.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="62" selection-start="676" selection-end="714" vertical-scroll-proportion="-9.0">
+        <state line="12" column="62" selection-start="676" selection-end="714" vertical-scroll-proportion="0.496112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/se/category3d.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/se/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.503888">
           <folding />
         </state>
       </provider>
@@ -1109,108 +1140,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/se/gradient/colorpicker.js">
+    <entry file="file://$PROJECT_DIR$/static/js/se/hovernavigation/modernizr.custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="207" selection-end="207" vertical-scroll-proportion="0.23858616">
+        <state line="3" column="8357" selection-start="8496" selection-end="8496" vertical-scroll-proportion="0.11929308">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/se/hovernavigation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="46" selection-start="250" selection-end="265" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/applications/map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="47" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0">
+        <state line="8" column="43" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/json_plugin.py">
+    <entry file="file://$PROJECT_DIR$/static/css/se/hovernavigation/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="5" column="39" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applications/se/hexaflip.py">
+    <entry file="file://$PROJECT_DIR$/views/se/hovernavigation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/se/gradient/gradX.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="735" column="32" selection-start="25416" selection-end="25419" vertical-scroll-proportion="0.33190578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/se/gradient/dom-drag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="39" selection-start="4910" selection-end="4910" vertical-scroll-proportion="1.5346534">
+        <state line="159" column="55" selection-start="8473" selection-end="8484" vertical-scroll-proportion="-3.0983605">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/gradient/colorpicker.css">
+    <entry file="file://$PROJECT_DIR$/static/css/se/hovernavigation/component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="480" column="1" selection-start="12690" selection-end="12690" vertical-scroll-proportion="0.9166667">
-          <folding>
-            <element signature="e#11283#11422#2" expanded="true" />
-            <element signature="e#11745#12076#2" expanded="true" />
-            <element signature="e#12200#12687#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/se/gupjct3f.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="71" selection-end="165" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/css/gupjct3f.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="0" selection-end="1068" vertical-scroll-proportion="-9.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/imagetransitions/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="39" selection-start="1350" selection-end="1361" vertical-scroll-proportion="-3.7317073">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/imagetransitions/style1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.5227723">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/gupjct3f/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-14.981708">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/se/gradient/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="46" selection-start="4844" selection-end="4844" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/css/gradient.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="0.7091932">
+        <state line="80" column="23" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.30117646">
           <folding />
         </state>
       </provider>
