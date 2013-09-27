@@ -8,7 +8,7 @@ IS_SESSION = False
 IS_RELOADER = True
 
 
-HOST = get_ip_address('eth0')
+HOST = '127.0.0.1'#get_ip_address('eth0')
 PORT = 8080
 
 

@@ -5,7 +5,7 @@
 ##*.[oa]
 ##显示指定忽略名称为main的文件
 *.pyc
-.idea/*
+.idea
 
 ## Numerous always-ignore extensions
 *.diff

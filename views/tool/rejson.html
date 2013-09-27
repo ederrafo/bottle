@@ -1,0 +1,82 @@
+{%- extends 'layout.html' -%}
+{%- block wrap -%}
+<div id='_form_div'>method:<b id='_method_div'></b><br/> action:<b id='_action_div'></b></div>
+<form id='form_id' method='post' action='http://'  target='_blank'>
+    <div id = 'mdiv'></div>
+    <textarea id='json_value'></textarea>
+    <br/>
+    <input type='button' id="submit" value='submit' />
+{#    <input type='button' id='show' value='add' />#}
+    <input type='button' id='edit' value='edit' />
+</form>
+<script type="text/javascript" language="javascript">
+    $().ready(function() {
+
+        var falg = false;
+        var form =  $('#form_id');
+
+        var m_div = $('#_method_div');
+        var a_div = $('#_action_div');
+        m_div.html(form.attr('method'));
+        a_div.html(form.attr('action'));
+
+        $('#submit').click(function(){
+            var _form =  $('#form_id');
+            console.log(_form.attr('method'));
+            console.log(_form.attr('action'));
+            $.ajax({
+                url: _form.attr('action'),
+                data: "{type:'DoOpenClickStart',id:'1001'}",
+                type: _form.attr('method'),
+                dataType: 'json',
+                contentType: 'application/json; charset=utf8',
+                success: function(data) {
+                     art.dialog({id:'result_id',content:data}, function(){
+                        console.log('ok');
+                     });
+                },
+                error: function(xhr) {
+                    art.dialog({id:'result_id',content:xhr}, function(){
+                        console.log('no');
+                     });
+                }
+            });
+        });
+
+        $('#show').click(function(){
+            var _html = 'name :<input type="text"  id="type_name" value=""><br/>value : <input type="text"  id="type_value" value="">';
+
+            art.dialog({id:'dialog_id',content:_html}, function(){
+
+                var e = $('#type_name');
+                var v = $('#type_value');
+                var name = e.val();
+                var value = v.val();
+                if(name.length>0){
+                    $("#mdiv").append('<div class="iptdiv" ><span>'+name+' :  </span><input type="text" name="'+name+'" value="'+value+'" class="ipt" /><a onclick="moveinput(this)" href="#" name="rmlink">X</a></div>');
+                }
+            });
+        });
+
+        $('#edit').click(function(){
+            var form =  $('#form_id');
+            var _html = 'action :<input type="text" id="action_name" value="'+form.attr('action')+'"><br/>method :<input type="text" id="method_name" value="'+form.attr('method')+'">';
+            art.dialog({id:'dialog_id',content:_html}, function(){
+                var _action = $('#action_name');
+                var _method = $('#method_name');
+                var _form =  $('#form_id');
+                _form.attr('action',_action.val());
+                _form.attr('method',_method.val());
+                var m_div = $('#_method_div');
+                var a_div = $('#_action_div');
+                m_div.html(_method.val());
+                a_div.html(_action.val());
+            });
+        });
+    });
+    function moveinput(e){
+        //console.log($(e).prop("tagName"));
+        $(e).parent().remove();
+    }
+</script>
+{% endblock %}
