@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{ title }}</title>
+    {% from 'macros/resource_render.html' import render_css_to_response, render_script_to_response %}
+    {{ render_css_to_response( g.css_list) }}
+    {{ render_script_to_response( g.script_list) }}
+</head>
+<body class="{% if css_name %}{{ css_name }}{% else %}body_bg{% endif %}">
+<canvas id="q"></canvas>
+<script type="text/javascript">
+
+var s = window.screen;
+var width = q.width = s.width;
+var height = q.height = s.height;
+var letters = Array(256).join(1).split('');
+
+var draw = function () {
+  q.getContext('2d').fillStyle='rgba(0,0,0,.05)';
+  q.getContext('2d').fillRect(0,0,width,height);
+  q.getContext('2d').fillStyle='#0F0';
+  letters.map(function(y_pos, index){
+    text = String.fromCharCode(3e4+Math.random()*33);
+    x_pos = index * 10;
+    q.getContext('2d').fillText(text, x_pos, y_pos);
+    letters[index] = (y_pos > 758 + Math.random() * 1e4) ? 0 : y_pos + 10;
+  });
+};
+setInterval(draw, 33);
+</script>
+</body>
+</html>
