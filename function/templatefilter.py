@@ -33,7 +33,8 @@ def get_domain_name(value):
     domain_name = 'http://%s:%s' % (HOST,PORT)
     # domain_name = 'http://www.example.com'
     if value:
-        url = '%s%s' % (domain_name,value)
+        # url = '%s%s' % (domain_name,value)
+        url = '%s' % domain_name
     else:
         url = ''
     return url

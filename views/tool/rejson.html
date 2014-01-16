@@ -3,7 +3,7 @@
 <div id='_form_div'>method:<b id='_method_div'></b><br/> action:<b id='_action_div'></b></div>
 <form id='form_id' method='post' action='http://'  target='_blank'>
     <div id = 'mdiv'></div>
-    <textarea id='json_value'></textarea>
+    <textarea rows="5" cols="30" id='json_value'></textarea>
     <br/>
     <input type='button' id="submit" value='submit' />
 {#    <input type='button' id='show' value='add' />#}
@@ -24,11 +24,15 @@
             var _form =  $('#form_id');
             console.log(_form.attr('method'));
             console.log(_form.attr('action'));
+            var data = $("#json_value").val();
+
             $.ajax({
                 url: _form.attr('action'),
-                data: "{type:'DoOpenClickStart',id:'1001'}",
+                data: data,
                 type: _form.attr('method'),
                 dataType: 'json',
+                async: false,
+                crossDomain: true,
                 contentType: 'application/json; charset=utf8',
                 success: function(data) {
                      art.dialog({id:'result_id',content:data}, function(){
