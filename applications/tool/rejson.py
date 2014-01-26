@@ -18,7 +18,7 @@ def rejson_view(context,render):
 
     response.set_header("Access-Control-Allow-Origin", "*")
     response.set_header("Access-Control-Allow-Methods", "GET,POST,OPTIONS")
-    response.set_header("Access-Control-Allow-Headers", "Content-Type")
+    response.set_header("Access-Control-Allow-Headers", "text/plain")
     response.set_header("Access-Control-Max-Age", "86400")
 
 
