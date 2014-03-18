@@ -9,8 +9,10 @@ IS_RELOADER = True
 
 
 HOST = '127.0.0.1'#get_ip_address('eth0')
+# HOST = get_ip_address('eth0')
 PORT = 8080
 
+DOMAIN = "mytool.zhubajie.com"
 
 
 #session配置

@@ -3,6 +3,7 @@ import collections
 import gzip
 import urllib
 import urllib2
+from urlparse import urlparse
 
 try:
     from cStringIO import StringIO
@@ -21,7 +22,7 @@ __author__ = 'myth'
 _HTTP_GET = 1
 _HTTP_POST = 2
 # 超时时间（秒）
-TIMEOUT = 30
+TIMEOUT = 45
 RETURN_TYPE = {"json": 0, "xml": 1, "html": 2, "text": 3}
 _METHOD_MAP = {'GET': _HTTP_GET, 'POST': _HTTP_POST}
 
@@ -40,37 +41,81 @@ class APIError(StandardError):
         return 'APIError: %s: %s, request: %s' % (self.error_code, self.error, self.request)
 
 
-def callback_type(return_type='json'):
+# def callback_type(return_type='json'):
+#
+#     default_type = "json"
+#     default_value = RETURN_TYPE.get(default_type)
+#     if return_type:
+#         if isinstance(return_type, (str, unicode)):
+#             default_value = RETURN_TYPE.get(return_type.lower(), default_value)
+#     return default_value
 
-    default_type = "json"
-    default_value = RETURN_TYPE.get(default_type)
-    if return_type:
-        if isinstance(return_type, (str, unicode)):
-            default_value = RETURN_TYPE.get(return_type.lower(), default_value)
-    return default_value
+
+def _format_params(_pk=None, **kw):
+    """
+
+    :param kw:
+    :type kw:
+    :return:
+    :rtype:
+    """
+
+    __pk = '%s[%%s]' % _pk if _pk else '%s'
+
+    for k, v in kw.iteritems():
+        _k = __pk % k
+        if isinstance(v, basestring):
+            qv = v.encode('utf-8') if isinstance(v, unicode) else v
+            _v = urllib.quote(qv)
+            yield _k, _v
+        elif isinstance(v, collections.Iterable):
+            if isinstance(v, dict):
+                for _ck, _cv in _format_params(_pk=_k, **v):
+                    yield _ck, _cv
+            else:
+                for i in v:
+                    qv = i.encode('utf-8') if isinstance(i, unicode) else str(i)
+                    _v = urllib.quote(qv)
+                    yield _k, _v
+        else:
+            qv = str(v)
+            _v = urllib.quote(qv)
+            yield _k, _v
 
 
-def _encode_params(**kw):
+def encode_params(**kw):
     """
     do url-encode parameters
 
-    >>> _encode_params(a=1, b='R&D')
+    >>> encode_params(a=1, b='R&D')
     'a=1&b=R%26D'
-    >>> _encode_params(a=u'\u4e2d\u6587', b=['A', 'B', 123])
+    >>> encode_params(a=u'\u4e2d\u6587', b=['A', 'B', 123])
     'a=%E4%B8%AD%E6%96%87&b=A&b=B&b=123'
+
+    >>> encode_params(**{
+        'a1': {'aa1': 1, 'aa2': {'aaa1': 11}},
+        'b1': [1, 2, 3, 4],
+        'c1': {'cc1': 'C', 'cc2': ['Q', 1, '@'], 'cc3': {'ccc1': ['s', 2]}}
+    })
+    'a1[aa1]=1&a1[aa2][aaa1]=11&c1[cc1]=C&c1[cc3][ccc1]=s&c1[cc3][ccc1]=2&c1[cc2]=Q&c1[cc2]=1&c1[cc2]=%40&b1=1&b1=2&b1=3&b1=4'
     """
+    # args = []
+    # for k, v in kw.iteritems():
+    #     if isinstance(v, basestring):
+    #         qv = v.encode('utf-8') if isinstance(v, unicode) else v
+    #         args.append('%s=%s' % (k, urllib.quote(qv)))
+    #     elif isinstance(v, collections.Iterable):
+    #         for i in v:
+    #             qv = i.encode('utf-8') if isinstance(i, unicode) else str(i)
+    #             args.append('%s=%s' % (k, urllib.quote(qv)))
+    #     else:
+    #         qv = str(v)
+    #         args.append('%s=%s' % (k, urllib.quote(qv)))
+    # return '&'.join(args)
+
     args = []
-    for k, v in kw.iteritems():
-        if isinstance(v, basestring):
-            qv = v.encode('utf-8') if isinstance(v, unicode) else v
-            args.append('%s=%s' % (k, urllib.quote(qv)))
-        elif isinstance(v, collections.Iterable):
-            for i in v:
-                qv = i.encode('utf-8') if isinstance(i, unicode) else str(i)
-                args.append('%s=%s' % (k, urllib.quote(qv)))
-        else:
-            qv = str(v)
-            args.append('%s=%s' % (k, urllib.quote(qv)))
+    for k, v in _format_params(_pk=None, **kw):
+        args.append('%s=%s' % (k, v))
     return '&'.join(args)
 
 
@@ -113,6 +158,8 @@ def _parse_json(s):
         for k, v in pairs.iteritems():
             o[str(k)] = v
         return o
+    print '@'*50
+    print s
     return json.loads(s, object_hook=_obj_hook)
 
 
@@ -140,21 +187,34 @@ def _parse_text(s):
     raise NotImplementedError()
 
 
-def _http_call(the_url, method, return_type="json", request_suffix=None, **kwargs):
+def _http_call(the_url, method, return_type="json", request_type=None, request_suffix=None, headers={}, _timeout=30, **kwargs):
     """
     the_url: 请求地址
     method 请求方法（get，post）
     return_type： 返回格式解析
     request_suffix： 请求地址的后缀，如jsp，net
+    _timeout: 超时时间
     kwargs: 请求参数
     """
 
-    params = _encode_params(**kwargs)
     http_url = "%s.%s" (the_url, request_suffix) if request_suffix else the_url
-    http_url = '%s?%s' % (http_url, params) if method == _HTTP_GET else http_url
+
+    if request_type == 'json':
+        headers['Content-Type'] = 'application/json'
+        # method = _HTTP_POST
+        # json_data = json.dumps(kwargs)
+        # # convert str to bytes (ensure encoding is OK)
+        # params = json_data.encode('utf-8')
+        params = json.dumps(kwargs)
+    else:
+        params = encode_params(**kwargs)
+        http_url = '%s?%s' % (http_url, params) if method == _HTTP_GET else http_url
     print http_url
+    u = urlparse(http_url)
+    headers.setdefault("host", u.hostname)
     http_body = None if method == _HTTP_GET else params
-    req = urllib2.Request(http_url, data=http_body)
+
+    req = urllib2.Request(http_url, data=http_body, headers=headers)
 
     callback = globals().get('_parse_{0}'.format(return_type))
     if not hasattr(callback, '__call__'):
@@ -162,21 +222,22 @@ def _http_call(the_url, method, return_type="json", request_suffix=None, **kwarg
         callback = _parse_json
     try:
 
-        resp = urllib2.urlopen(req, timeout=TIMEOUT)
+        resp = urllib2.urlopen(req, timeout=_timeout if _timeout else TIMEOUT)
         body = _read_body(resp)
         r = callback(body)
-        if hasattr(r, 'error_code'):
-            raise APIError(r.error_code, r.get('error', ''), r.get('request', ''))
+        # if hasattr(r, 'error_code'):
+        #     raise APIError(r.error_code, r.get('error', ''), r.get('request', ''))
         return r
     except urllib2.HTTPError, e:
         try:
             body = _read_body(e)
             r = callback(body)
+            return r
         except:
             r = None
-        if hasattr(r, 'error_code'):
-            raise APIError(r.error_code, r.get('error', ''), r.get('request', ''))
-        raise e
+        # if hasattr(r, 'error_code'):
+        #     raise APIError(r.error_code, r.get('error', ''), r.get('request', ''))
+            raise e
 
 
 class HttpObject(object):
@@ -194,6 +255,9 @@ class HttpObject(object):
                 the_url = self.client.api_url
             return _http_call(the_url, self.method, **kw)
         return wrap
+
+    def __call__(self, **kw):
+        return _http_call(self.client.api_url, self.method, **kw)
 
 
 class APIClient(object):
@@ -223,9 +287,9 @@ class APIClient(object):
         http = "http"
         if domain.startswith("http://") or domain.startswith("https://"):
             http, domain = domain.split("://")
-        else:
-            if is_https:
-                http = "https"
+        # else:
+        if is_https:
+            http = "https"
 
         self.api_url = ('%s://%s' % (http, domain)).rstrip("/")
         self.get = HttpObject(self, _HTTP_GET)
@@ -322,14 +386,47 @@ def test_logistics():
     client = APIClient(domain)
 
     data = {"id": "45f2d1f2sds", "com": "yunda", "nu": "1500066330925"}
-    result = client.__get(**data)
+    result = client.__get(_timeout=2, **data)
     print result
     print result["message"]
     print result.get("message")
     print result.message
 
+
 if __name__ == '__main__':
 
     # test_APIClient()
 
-    test_logistics()
+    # test_logistics()
+
+    data = {
+        "data":{
+            "id": 1,
+            "pid": 3,
+            "name": u'中的阿斯顿'
+        },
+        "sign": 'asdfdsdsfsdf',
+    }
+
+    domain = "kuaiyin.zhubajie.com"
+
+    client = APIClient(domain)
+    # headers = {'Content-Type': 'application/json'}
+    headers = {"host": domain}
+
+    result = client.api.zhubajie.fz.info.post(return_type="json", request_type="json", headers=headers, **data)
+    print result
+    print result['data']['msg']
+
+    c = APIClient('task.6.zbj.cn')
+    r = getattr(c.api, 'kuaiyin-action-delcache').post(request_type="json",
+                                                       headers={},
+                                                       **{"sign": "",
+                                                          "data": {
+                                                              "product": "pvc",
+                                                              "category": "card",
+                                                              "req_type": "pack_list"
+                                                          }})
+    print r
+    print r['data']['msg']
+

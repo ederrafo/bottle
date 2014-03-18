@@ -2,7 +2,7 @@
 '''
 模板过滤器
 '''
-from config import HOST, PORT
+from config import HOST, PORT, DOMAIN
 
 __author__ = 'myth'
 
@@ -11,9 +11,11 @@ __author__ = 'myth'
 def get_config_domain_name(value):
     domain_name = 'http://%s:%s' % (HOST,PORT)
     if value == 'mat_domain':
-        url = '%s' % (domain_name)
+        url = 'http://%s' % DOMAIN
+        # url = '%s' % (domain_name)
     else:
-        url = ''
+        url = '%s' % (domain_name)
+        # url = ''
     return url
 
 
