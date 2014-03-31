@@ -12,6 +12,7 @@
 *.err
 *.orig
 *.log
+*.profile
 *.rej
 *.swo
 *.swp
