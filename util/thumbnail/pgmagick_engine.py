@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from pgmagick.api import Draw, Image as pgai
 from pgmagick import Geometry, CompositeOperator as co, FilterTypes, OrientationType
-from util.watermark.base import EngineBase, RIGHT_BOTTOM, timeit
+from util.thumbnail.base import EngineBase, RIGHT_BOTTOM, timeit
 
 __author__ = 'myth'
 

@@ -2,6 +2,7 @@
 from functools import wraps
 import math
 import time
+from util.thumbnail import debug
 
 
 __author__ = 'myth'
@@ -24,8 +25,8 @@ def timeit(func):
         start = time.time()
         _func = func(*args, **kwargs)
         end = time.time()
-
-        print '%r: "%s" methods of running time->%r' % (func.func_code, func.func_name, end - start)
+        if debug:
+            print '%r: "%s" methods of running time->%r' % (func.func_code, func.func_name, end - start)
         return _func
 
     # 将包装后的函数返回

@@ -7,7 +7,7 @@ from PIL import Image
 
 cairocffi.install_as_pycairo()
 import cairo
-from util.watermark.base import EngineBase, timeit, RIGHT_BOTTOM
+from util.thumbnail.base import EngineBase, timeit, RIGHT_BOTTOM
 
 
 __author__ = 'myth'
@@ -176,15 +176,16 @@ class CairoEngine(EngineBase):
         # calculate output size
         w, h = self.get_image_size(image)
         angle = -radians(angle)
+
+        matrix = [
+            cos(angle), -sin(angle), 0.0,
+            sin(angle), cos(angle), 0.0
+        ]
+
+        def transform(x, y, (a, b, c, d, e, f)=matrix):
+            return a*x + b*y + c, d*x + e*y + f
+
         if expand:
-
-            matrix = [
-                cos(angle), -sin(angle), 0.0,
-                sin(angle), cos(angle), 0.0
-            ]
-
-            def transform(x, y, (a, b, c, d, e, f)=matrix):
-                return a*x + b*y + c, d*x + e*y + f
 
             xx = []
             yy = []
@@ -197,18 +198,20 @@ class CairoEngine(EngineBase):
 
             # adjust center
             x, y = transform(w / 2.0, h / 2.0)
-            print x, y
             move_x = 0-min(xx)
             move_y = 0-min(yy)
         else:
-            move_x, move_y = (0, 0)
+            x, y = transform(w / 2.0, h / 2.0)
+            move_x = w/2.0 - x
+            move_y = h/2.0 - y
+            # move_x, move_y = (0, 0)
         surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, w, h)
         ctx = cairo.Context(surface)
 
         ctx.translate(move_x, move_y)
         ctx.rotate(angle)
 
-        ctx.set_source_surface(mark)
+        ctx.set_source_surface(image)
         ctx.paint()
 
         return surface
@@ -249,8 +252,6 @@ if __name__ == '__main__':
     ce = CairoEngine()
     mark = ce.pil2cairo(mark)
 
-    surface = ce.rotate(mark, 90*3*9*1, True)
-    # ctx.restore()
-    # ctx.stroke()
+    surface = ce.rotate(mark, 0, True)
     surface.write_to_png('/home/myth/temp/tmp/c1.png')
 

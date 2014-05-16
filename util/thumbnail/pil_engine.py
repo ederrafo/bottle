@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from PIL import Image
 from math import hypot, radians, pi
-from util.watermark.base import EngineBase, RIGHT_BOTTOM, timeit
+from util.thumbnail.base import EngineBase, RIGHT_BOTTOM, timeit
 
 
 __author__ = 'myth'
@@ -209,5 +209,7 @@ if __name__ == '__main__':
     pe = PilEngine()
     mark = pe.rotate(mark, 90, expand=False)
 
+    mark = mark.convert('RGB')
+    image_format = 'PNG'
     # mark, mark_format = pe.rgb_to_rgba(mark)
     mark.save('/home/myth/temp/tmp/c1.jpg', image_format, quality=95)
