@@ -51,35 +51,38 @@ class APIError(StandardError):
 #     return default_value
 
 
-def _format_params(_pk=None, **kw):
+def _format_params(_pk=None, encode=None, **kw):
     """
 
     :param kw:
     :type kw:
+    :param encode:
+    :type encode:
     :return:
     :rtype:
     """
 
     __pk = '%s[%%s]' % _pk if _pk else '%s'
+    encode = encode if encode else urllib.quote
 
     for k, v in kw.iteritems():
         _k = __pk % k
         if isinstance(v, basestring):
             qv = v.encode('utf-8') if isinstance(v, unicode) else v
-            _v = urllib.quote(qv)
+            _v = encode(qv)
             yield _k, _v
         elif isinstance(v, collections.Iterable):
             if isinstance(v, dict):
-                for _ck, _cv in _format_params(_pk=_k, **v):
+                for _ck, _cv in _format_params(_pk=_k, encode=encode, **v):
                     yield _ck, _cv
             else:
                 for i in v:
                     qv = i.encode('utf-8') if isinstance(i, unicode) else str(i)
-                    _v = urllib.quote(qv)
+                    _v = encode(qv)
                     yield _k, _v
         else:
             qv = str(v)
-            _v = urllib.quote(qv)
+            _v = encode(qv)
             yield _k, _v
 
 
@@ -114,8 +117,11 @@ def encode_params(**kw):
     # return '&'.join(args)
 
     args = []
-    for k, v in _format_params(_pk=None, **kw):
+    _urlencode = kw.pop('_urlencode', urllib.quote)
+    for k, v in _format_params(_pk=None, encode=_urlencode, **kw):
         args.append('%s=%s' % (k, v))
+
+    args = sorted(args, key=lambda s: s.split("=")[0])
     return '&'.join(args)
 
 
@@ -158,8 +164,6 @@ def _parse_json(s):
         for k, v in pairs.iteritems():
             o[str(k)] = v
         return o
-    print '@'*50
-    print s
     return json.loads(s, object_hook=_obj_hook)
 
 

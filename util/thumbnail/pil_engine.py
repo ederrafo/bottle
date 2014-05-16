@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from PIL import Image
-import math
+from math import hypot, radians, pi
 from util.watermark.base import EngineBase, RIGHT_BOTTOM, timeit
 
 
@@ -45,7 +45,7 @@ class PilEngine(EngineBase):
 
             mark = line.rotate(obliquity, expand=True)
             mw, mh = self.get_image_size(mark)
-            step = math.hypot(mw, mh)
+            step = hypot(mw, mh)
             for _pos in coordinates:
                 pos = self.oblique_line_coordinate(_pos, w, h, obliquity=obliquity)
                 start, end = pos
@@ -142,25 +142,72 @@ class PilEngine(EngineBase):
         else:
             return mark
 
+    @timeit
+    def rotate(self, image, angle=0, expand=False):
+        """
+        图片水平旋转
+        :param image:
+        :type image: PIL.Image
+        :param angle: 旋转角度
+        :type angle:
+        :param expand:可选的扩展标志。如果为true，
+                      扩大了输出图像，使其大到足以容纳整个旋转后的图像。
+                      如果虚假或省略，使输出的图像的大小相同的输入图像。
+        :type expand: bool
+        :return:
+        :rtype:
+        """
+        if angle % 90 == 0:
+            cycles = int(angle) / 360
+            _angle = angle - cycles * 360
+            # if _angle == 0:
+            #     return image
+            if _angle == 90:
+                return image.transpose(Image.ROTATE_90)
+            if _angle == 180:
+                return image.transpose(Image.ROTATE_180)
+            if _angle == 270:
+                return image.transpose(Image.ROTATE_270)
+            return image
+        else:
+            return image.rotate(angle, expand=expand)
+
+
 if __name__ == '__main__':
-    MARK_IMAGE = './kuaiyin.png'
-    LINE_IMAGE = './line.png'
-    new_image_s_filename = '/home/myth/temp/tmp/test1.jpg'
+    # MARK_IMAGE = './kuaiyin.png'
+    # LINE_IMAGE = './line.png'
+    # new_image_s_filename = '/home/myth/temp/tmp/test1.jpg'
+    #
+    # mark = Image.open(MARK_IMAGE)
+    # line = Image.open(LINE_IMAGE)
+    # im = Image.open(new_image_s_filename)
+    #
+    # pe = PilEngine()
+    #
+    # im, image_format = pe.rgb_to_rgba(im)
+    # line, line_format = pe.rgb_to_rgba(line)
+    # mark, mark_format = pe.rgb_to_rgba(mark)
+    #
+    # w, h = pe.get_image_size(line)
+    # line = line.resize((w*3, h*3), resample=Image.ANTIALIAS)
+    #
+    # im = pe.draw_grid_line(im, line)
+    # # im.paste(mark, (0, 0), mark)
+    # im = pe.draw_watermark_picture(im, mark)
+    # im.save('/home/myth/temp/tmp/b4.jpg', image_format, quality=95)
 
+    #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    MARK_IMAGE = '/home/myth/temp/tmp/tt.jpg'
+    #310x432
     mark = Image.open(MARK_IMAGE)
-    line = Image.open(LINE_IMAGE)
-    im = Image.open(new_image_s_filename)
-
+    if mark.mode != 'RGBA':
+        mark = mark.convert('RGBA')
+        image_format = 'JPEG'
+    else:
+        image_format = 'PNG'
     pe = PilEngine()
+    mark = pe.rotate(mark, 90, expand=False)
 
-    im, image_format = pe.rgb_to_rgba(im)
-    line, line_format = pe.rgb_to_rgba(line)
-    mark, mark_format = pe.rgb_to_rgba(mark)
-
-    w, h = pe.get_image_size(line)
-    line = line.resize((w*3, h*3), resample=Image.ANTIALIAS)
-
-    im = pe.draw_grid_line(im, line)
-    # im.paste(mark, (0, 0), mark)
-    im = pe.draw_watermark_picture(im, mark)
-    im.save('/home/myth/temp/tmp/b4.jpg', image_format, quality=95)
+    # mark, mark_format = pe.rgb_to_rgba(mark)
+    mark.save('/home/myth/temp/tmp/c1.jpg', image_format, quality=95)
