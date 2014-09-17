@@ -592,7 +592,7 @@ if __name__ == '__main__':
     mail = Mail(config)
     # connect = mail.connect()
     # smtp = connect._init_smtp_server()
-    # print smtp.login('wangyu@zhubajie.com', 'wy147896321')
+    # print smtp.login('wangyu@zhubajie.com', 'wy14753698')
     # print smtp.verify('tt@qq.com')
     mail.check_account()
     result = mail.send(msg)
